@@ -41,7 +41,7 @@
     z-index: -1;
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 790px) {
     .header {
         height: 35%;
     }
