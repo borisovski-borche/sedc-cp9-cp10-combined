@@ -10,46 +10,41 @@ const contactBtn = document.querySelector(".contactBtn");
 
 //creating the different dynamic pages funcitons
 
-let urlId = ""
+let urlId = "";
 
 window.addEventListener("load", e => {
-
-  urlId = e.currentTarget.location.href.replace("http://localhost:3000/","")
+  urlId = e.currentTarget.location.href.replace("http://localhost:3000/", "");
 
   if (urlId.startsWith("academy")) {
-    showPageByClass("academy")
+    showPageByClass("academy");
   }
-  
-})
+});
 
-const urlIdHandler = (data,id) => {
-  const pageIds = ["about-us","contact","tuition-fees"]
+const urlIdHandler = (data, id) => {
+  const pageIds = ["about-us", "contact", "tuition-fees"];
 
-  const academyIds = data.map(academy => academy.id)
+  const academyIds = data.map(academy => academy.id);
 
-  const allIds = [...pageIds, ...academyIds]
+  const allIds = [...pageIds, ...academyIds];
 
-  if(!id) {
-    showPageByClass("landing")
-    return
+  if (!id) {
+    showPageByClass("landing");
+    return;
   }
 
   if (!allIds.find(item => item === id)) {
-    showPageByClass("not-found")
-    return
+    showPageByClass("not-found");
+    return;
   }
 
-
-  if(id.startsWith("academy")){
-    createAcademyPage(data,id)
-    showPageByClass("academy")
-    return
+  if (id.startsWith("academy")) {
+    createAcademyPage(data, id);
+    showPageByClass("academy");
+    return;
   }
 
-  showPageByClass(urlId)
-
-}
-
+  showPageByClass(urlId);
+};
 
 const createAcademyPage = (data, id) => {
   const academyContainer = document.querySelector(".academy__container");
@@ -103,7 +98,7 @@ const categoryCardLinksHandler = (linkElements, data) => {
 
       createAcademyPage(data, academyId);
 
-      window.history.pushState({academyId}, "", `/${academyId}`);
+      window.history.pushState({ academyId }, "", `/${academyId}`);
 
       showPageByClass("academy");
     });
@@ -158,21 +153,17 @@ const routingHandler = data => {
     if (e.state.academyId) {
       createAcademyPage(data, e.state.academyId);
       showPageByClass("academy");
-
     }
   };
 };
-
-
 
 //Fetch call to get all academies data
 fetch("https://borisovski-borche.github.io/cp-09-data/data/db.json")
   .then(res => res.json())
   .then(data => {
-
     createLandingPage(data.academies);
 
-    urlIdHandler(data.academies,urlId)
+    urlIdHandler(data.academies, urlId);
 
     window.onpopstate = routingHandler(data.academies);
   });
