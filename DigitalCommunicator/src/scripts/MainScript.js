@@ -28,6 +28,7 @@ chatMinimize.addEventListener("click", () => {
                 }, 4000);
             }
         }, 1500);
+        UiService.HTMLScrollCheck();
     }
 });
 
@@ -38,6 +39,7 @@ chatMaximize.addEventListener("click", () => {
         maximizeSpeechBox.style.display = "none";
         setTimeout(() => {
             window.innerWidth < 821 ? mainWindow.style.height = "100%" : mainWindow.style.height = "80%";
+            UiService.HTMLScrollCheck();
             mainWindow.style.transition = "0.5s ease-in-out";
             mainWindow.style.visibility = "visible";
         }, 500);
@@ -69,6 +71,9 @@ window.addEventListener("resize", () => {
     AnimationsService.onResizeGamesAndQuizzes();
     ButtonsService.buttonsDiv.scrollIntoView({ block: 'end', behavior: 'smooth' });
     UiService.recommendedDiv.scrollIntoView({ block: 'end', behavior: 'smooth' });
+
+    window.innerWidth < 821 ? mainWindow.style.height = "100%" : mainWindow.style.height = "80%";
+    UiService.HTMLScrollCheck();
 
     if (window.innerWidth < 821) {
         UiService.toggleDisplayView(QuizzesService.gamesAndQuizzesWindow, AnimationsService.chatWindow);

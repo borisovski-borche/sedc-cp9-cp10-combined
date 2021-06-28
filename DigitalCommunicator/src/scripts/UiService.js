@@ -239,5 +239,14 @@ const UiService = {
     printContactButton: function(){
         ButtonsService.mainButtonsDiv.innerHTML += `<button class="mainButtonsStyle contactUs" id="contactUs" onclick="ContactUsForm.printContactUsForm()"> Contact Us </button>`;
         buttonsDiv.scrollIntoView({ block: 'end', behavior: 'smooth' });
+    },
+
+    HTMLScrollCheck: function(){
+        mainWindow.style.height === "100%" ? document.getElementsByTagName("html")[0].style.overflowY = "hidden" : document.getElementsByTagName("html")[0].style.overflowY = "auto";
+    },
+
+    openAcademy: function(academyName){
+        chatMinimize.click();
+        console.log(academyName);
     }
 };//PROPERTIES: Chat history div, Recommended slide div, Modal pop up wrapper div

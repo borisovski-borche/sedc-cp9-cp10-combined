@@ -30,7 +30,7 @@
 /* STYLES FOR THE CHAT WINDOW */
 .main-window {
   border-top: none;
-  border-radius: 1.563rem;
+  border-radius: 15px;
   transition: all 1s ease-out;
   visibility: visible;
   position: fixed;
@@ -50,7 +50,7 @@
   min-width: 24.75rem;
   background-color: var(--dark-blue);
   z-index: -1;
-  border-radius: 1.5625rem 1.5625rem 0.75rem 0.75rem;
+  border-radius: 15px 15px 0.75rem 0.75rem;
 }
 
 .img-logo {
