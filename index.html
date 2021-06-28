@@ -5,15 +5,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" media='screen and (min-width: 821px)' href='./CODE/src/styles/MainStyle.css' />
-  <link rel="stylesheet" media='screen and (max-width: 820px)' href='./CODE/src/styles/MobileStyle.css' />
+
+  <link rel="stylesheet" href="./VisualLearningPaths/style.css" />
+  <link rel="stylesheet" media='screen and (min-width: 821px)' href='./DigitalCommunicator/src/styles/MainStyle.css' />
+  <link rel="stylesheet" media='screen and (max-width: 820px)' href='./DigitalCommunicator/src/styles/MobileStyle.css' />
 
   <script src="https://kit.fontawesome.com/0f255abeae.js" crossorigin="anonymous"></script>
-  <script defer src="./scripts/util.js"></script>
-  <script defer src="./scripts/renderFunctions.js"></script>
-  <script defer src="./scripts/app.js"></script>
-  <title>Academies</title>
+  <script defer src="./VisualLearningPaths/scripts/util.js"></script>
+  <script defer src="./VisualLearningPaths/scripts/renderFunctions.js"></script>
+  <script defer src="./VisualLearningPaths/scripts/app.js"></script>
+
+  <title>SEDC Visual Leaning Paths & Digital Communicator</title>
 </head>
 
 <body>
@@ -61,7 +63,7 @@
   </div>
   <header class="headerBody" id="header">
     <div class="header__logo">
-      <img src="./img/header-logo-without-text.png" alt="logo" />
+      <img src="./VisualLearningPaths/img/header-logo-without-text.png" alt="logo" />
       <h1 class="header__logo-title">
         SEAVUS EDUCATION <span>and</span> DEVELOPMENT CENTER
       </h1>
@@ -408,7 +410,7 @@
   <section class="about__us-page">
     <div class="about">
       <div class="about_img">
-        <img src="./img/SEDC.jpg" alt="" />
+        <img src="./VisualLearningPaths/img/SEDC.jpg" alt="" />
       </div>
       <div class="about_info">
         <h1>About Us</h1>
@@ -510,7 +512,7 @@
       <div class="team">
         <div class="team_member">
           <div class="team_img">
-            <img src="./img/mike_ross.jpg" alt="Team_image" />
+            <img src="./VisualLearningPaths/img/mike_ross.jpg" alt="Team_image" />
           </div>
           <h3>John Smith</h3>
           <p class="role">DEVELOPER</p>
@@ -522,7 +524,7 @@
         </div>
         <div class="team_member">
           <div class="team_img">
-            <img src="./img/mike_ross.jpg" alt="Team_image" />
+            <img src="./VisualLearningPaths/img/mike_ross.jpg" alt="Team_image" />
           </div>
           <h3>Mark Brooks</h3>
           <p class="role">DEVELOPER</p>
@@ -534,7 +536,7 @@
         </div>
         <div class="team_member">
           <div class="team_img">
-            <img src="./img/mike_ross.jpg" alt="Team_image" />
+            <img src="./VisualLearningPaths/img/mike_ross.jpg" alt="Team_image" />
           </div>
           <h3>Barry Fields</h3>
           <p class="role">DEVELOPER</p>
@@ -595,29 +597,26 @@
     <a class="footer__icon" href="#header"><i class="fas fa-arrow-circle-up fa-3x"></i>
     </a>
     <div class="footer__logo">
-      <img src="img/aricoma-group-logo.png" alt="error_logo.png" />
+      <img src="./VisualLearningPaths/img/aricoma-group-logo.png" alt="error_logo.png" />
     </div>
     <div class="footer__copyright">
       <small>&copy; Copyright 2020. All rights reserved. Seavus education and
         development center</small>
     </div>
   </footer>
+
+
 <!-- CHAT BOT HTML BEGINS HERE -->
-  <div>
+  <div id="chatBotWrapper">
     <!-- MAIN CHAT WINDOW -->
     <div class="main-window" id="mainWindow">
 
       <!-- HEADER -->
       <div class="header">
-        <!-- GAMES BUTTON -->
         <button class="chat-games" title="Games" id="chatGames">Games</button>
-        <!-- QUIZZES BUTTON -->
         <button class="chat-quizzes" title="Quizzes" id="chatQuizzes">Quizzes</button>
-        <!-- AVATAR NAME -->
         <div class="chat-Name" id="chatName">Haralampiye<br>SEDC Chat Bot</div>
-        <!-- MINIMIZE BUTTON -->
         <button class="chat-minimize" id="chatMinimize"></button>
-        <!-- AVATAR LOGO -->
         <div class="img-logo" id="imgLogo"></div>
       </div>
 
@@ -628,11 +627,8 @@
 
         <!-- TEXT-CHAT WRAPPER -->
         <div class="chat" id="chatWindow">
-          <!-- CHAT HISTORY -->
           <div class="chat-history" id="chatHistory"></div>
-          <!-- MAIN BUTTONS -->
           <div class="main-chat-buttons-div" id="mainButtonsDiv"></div>
-          <!-- OPTION BUTTONS -->
           <div class="chat-buttons-div" id="buttonsDiv"></div>
 
           <!-- LOADER -->
@@ -661,7 +657,7 @@
         <div class="chat-searchInput-div" id="searchInput">
           <input type="text" placeholder="Type something..." id="input">
           <button class="chat-inputButton" id="inputButton"></button>
-          <div id="voiceRecognitionLoader"><img height="35px" src="./CODE/src/img-avatars/recordingAnimation.svg"
+          <div id="voiceRecognitionLoader"><img height="35px" src="./DigitalCommunicator/src/img-avatars/recordingAnimation.svg"
               alt="voiceRecognitionLoader"></div>
           <button class="chat-inputButton voice-inputButton" id="voiceButton"></button>
         </div>
@@ -669,7 +665,10 @@
     </div>
 
     <!-- MAXIMIZE BUTTON -->
-    <button class="chat-maximize" id="chatMaximize"></button>
+    <div class="maximizeButtonDiv">
+      <div id="maximizeSpeechBox" class="maximizeSpeechBox speechBox"></div>
+      <button class="chat-maximize" id="chatMaximize"></button>
+    </div>
 
     <!-- MODAL -->
     <div id="myModal" class="modal">
@@ -681,21 +680,20 @@
         </div>
       </div>
     </div>
-
   </div>
 
-  <script src="./CODE/src/scripts/ContactUsService.js"></script>
-  <script src="./CODE/src/scripts/DataService.js"></script>
-  <script src="./CODE/src/scripts/ButtonsService.js"></script>
-  <script src="./CODE/src/scripts/UiService.js"></script>
-  <script src="./CODE/src/scripts/AnimationsService.js"></script>
-  <script src="./CODE/src/scripts/SearchInputService.js"></script>
-  <script src="./CODE/src/scripts/ApplyAndPriceService.js"></script>
-  <script src="./CODE/src/scripts/QuizesService.js"></script>
-  <script src="./CODE/src/scripts/GamesService.js"></script>
-  <script src="./CODE/src/scripts/LexiconService.js"></script>
-  <script src="./CODE/src/scripts/VoiceRecognitionService.js"></script>
-  <script src="./CODE/src/scripts/MainScript.js"></script>
+  <script src="./DigitalCommunicator/src/scripts/ContactUsService.js"></script>
+  <script src="./DigitalCommunicator/src/scripts/DataService.js"></script>
+  <script src="./DigitalCommunicator/src/scripts/ButtonsService.js"></script>
+  <script src="./DigitalCommunicator/src/scripts/UiService.js"></script>
+  <script src="./DigitalCommunicator/src/scripts/AnimationsService.js"></script>
+  <script src="./DigitalCommunicator/src/scripts/SearchInputService.js"></script>
+  <script src="./DigitalCommunicator/src/scripts/ApplyAndPriceService.js"></script>
+  <script src="./DigitalCommunicator/src/scripts/QuizesService.js"></script>
+  <script src="./DigitalCommunicator/src/scripts/GamesService.js"></script>
+  <script src="./DigitalCommunicator/src/scripts/LexiconService.js"></script>
+  <script src="./DigitalCommunicator/src/scripts/VoiceRecognitionService.js"></script>
+  <script src="./DigitalCommunicator/src/scripts/MainScript.js"></script>
 </body>
 
 </html>

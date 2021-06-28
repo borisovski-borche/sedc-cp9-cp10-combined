@@ -104,7 +104,7 @@ const UiService = {
     //Prints message for the answer in the user got everything he needed
     printConversationDone: function (choice) {
         if (choice === "Yes") {
-            AnimationsService.chatBotBubbleName = "Mickey";
+            AnimationsService.chatBotBubbleName = "Haralampiye";
             this.replyInfoMessage(choice, ["What do you wanna to talk about next?"]);
             UiService.sleep().then(() => { ButtonsService.getMainButtons(DataService.cachedData); });
         } else if (choice === "No") {
@@ -138,20 +138,20 @@ const UiService = {
     // Changes the quizzes/games icon
     changeQuizzesGamesIconAndFunctionality: function (gameOrQuizFlag, item, viewPort) {
         if (gameOrQuizFlag) {
-            item.innerHTML = `<img src="./CODE/src/img-avatars/chatButton.svg" height="20rem">`;
+            item.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/chatButton.svg" height="20rem">`;
             if (item.id === "chatQuizzes") {
                 GamesService.areGamesOpen = false;
-                AnimationsService.chatGames.innerHTML = `<img src="./CODE/src/img-avatars/games.svg" height="25rem">`;
+                AnimationsService.chatGames.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/games.svg" height="25rem">`;
             } else {
                 QuizzesService.areQuizzesOpen = false;
-                AnimationsService.chatQuizzes.innerHTML = `<img src="./CODE/src/img-avatars/quizzes.svg" height="25rem">`;
+                AnimationsService.chatQuizzes.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/quizzes.svg" height="25rem">`;
             }
             this.toggleDisplayView(AnimationsService.chatWindow, viewPort);
         } else {
             if (item.id === "chatQuizzes") {
-                item.innerHTML = `<img src="./CODE/src/img-avatars/quizzes.svg" height="25rem">`;
+                item.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/quizzes.svg" height="25rem">`;
             } else {
-                item.innerHTML = `<img src="./CODE/src/img-avatars/games.svg" height="25rem">`;
+                item.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/games.svg" height="25rem">`;
             };
             this.toggleDisplayView(viewPort, AnimationsService.chatWindow);
         };
@@ -169,9 +169,9 @@ const UiService = {
     resetChatWindow: function () {
         this.toggleDisplayView(QuizzesService.gamesAndQuizzesWindow, AnimationsService.chatWindow);
         AnimationsService.chatWindow.style.overflowX = "hidden";
-        AnimationsService.chatGames.innerHTML = `<img src="./CODE/src/img-avatars/games.svg" height="25rem">`;
+        AnimationsService.chatGames.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/games.svg" height="25rem">`;
         GamesService.areGamesOpen = false;
-        AnimationsService.chatQuizzes.innerHTML = `<img src="./CODE/src/img-avatars/quizzes.svg" height="25rem">`;
+        AnimationsService.chatQuizzes.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/quizzes.svg" height="25rem">`;
         QuizzesService.areQuizzesOpen = false;
     },
 
@@ -237,7 +237,7 @@ const UiService = {
 
     //Prints contact button form
     printContactButton: function(){
-        ButtonsService.mainButtonsDiv.innerHTML += `<button class="contactUs" id="contactUs" onclick="ContactUsForm.printContactUsForm()"> Contact Us </button>`;
+        ButtonsService.mainButtonsDiv.innerHTML += `<button class="mainButtonsStyle contactUs" id="contactUs" onclick="ContactUsForm.printContactUsForm()"> Contact Us </button>`;
         buttonsDiv.scrollIntoView({ block: 'end', behavior: 'smooth' });
     }
 };//PROPERTIES: Chat history div, Recommended slide div, Modal pop up wrapper div

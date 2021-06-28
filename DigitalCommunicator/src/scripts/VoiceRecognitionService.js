@@ -18,18 +18,18 @@ const VoiceRecognitionService = {
                 recognition.start();
                 SearchInputService.input.disabled = true;
                 VoiceRecognitionService.voiceRecognitionLoader.style.display = "block";
-                VoiceRecognitionService.voiceRecognitionBtn.style.backgroundImage = "url(./CODE/src/img-avatars/muted.svg)";
+                VoiceRecognitionService.voiceRecognitionBtn.style.backgroundImage = "url(./DigitalCommunicator/src/img-avatars/muted.svg)";
             } else {
                 recognition.stop();
                 VoiceRecognitionService.voiceRecognitionLoader.style.display = "none";
                 SearchInputService.input.disabled = false;
-                VoiceRecognitionService.voiceRecognitionBtn.style.backgroundImage = "url(./CODE/src/img-avatars/mic.svg)";
+                VoiceRecognitionService.voiceRecognitionBtn.style.backgroundImage = "url(./DigitalCommunicator/src/img-avatars/mic.svg)";
             }
 
             recognition.addEventListener("end", function () {
                 if (VoiceRecognitionService.clickCounter % 2 === 1) VoiceRecognitionService.clickCounter--;
 
-                VoiceRecognitionService.voiceRecognitionBtn.style.backgroundImage = "url(./CODE/src/img-avatars/mic.svg)";
+                VoiceRecognitionService.voiceRecognitionBtn.style.backgroundImage = "url(./DigitalCommunicator/src/img-avatars/mic.svg)";
                 VoiceRecognitionService.voiceRecognitionLoader.style.display = "none";
             })
         });

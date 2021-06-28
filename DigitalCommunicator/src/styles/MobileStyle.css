@@ -1,25 +1,4 @@
-/* STYLES FOR THE WHOLE DOCUMENT */
-
-/* *, ::after, ::before {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    height: 100%;
-    overflow: hidden;
-}
-
-body {
-    font-family: 'DIN Pro Light', sans-serif;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100%;
-} */
-
+/* VARIABLES */
 :root {
     --dark-blue: #002c5f;
     --light-blue: #e9effe;
@@ -41,11 +20,18 @@ body {
 }
 
 /* STYLES FOR THE CHAT WINDOW */
-
 .main-window {
     transition: all 1s ease-out;
     visibility: visible;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 100%;
+    width: 100%;
+    z-index: 2;
 }
 
 .header {
@@ -97,7 +83,7 @@ body {
 }
 
 .chat-maximize {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 10%;
     background-image: url(../img-avatars/HARALAMPIYE.png);
@@ -118,6 +104,43 @@ body {
     visibility: hidden;
     transform: translateY(-2200px);
 }
+
+.maximizeSpeechBox {
+    width: 200px;
+    height: 80px;
+    margin: 50px auto;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--dark-blue);
+    background-color: #ececec;
+    position: fixed;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 3.5%;
+    bottom: 17%;
+    box-shadow: 0.188rem 0.188rem 1rem rgb(180, 180, 180);
+    display: none;
+  }
+
+  .speechBox:before {
+    background-color: #ececec;
+    content: "\00a0";
+    height: 16px;
+    position: absolute;
+    top: 69px;
+    right: 5px;
+    transform: rotate( 29deg) skew( -20deg);
+    -moz-transform: rotate( 29deg) skew( -20deg);
+    -ms-transform: rotate( 29deg) skew( -20deg);
+    -o-transform: rotate( 29deg) skew( -20deg);
+    -webkit-transform: rotate( 29deg) skew( -20deg);
+    width: 20px;
+    box-shadow: 0.28rem 0.05rem 1rem -1rem rgb(180, 180, 180);
+  }
 
 .chat-window {
     width: 100%;

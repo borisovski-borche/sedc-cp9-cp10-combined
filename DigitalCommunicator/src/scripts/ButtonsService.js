@@ -12,7 +12,7 @@ const ButtonsService = {
         if(this.mainButtonsDiv.innerHTML !== "") return;
 
         for (const button in data) {
-            this.mainButtonsDiv.innerHTML += `<button id="${button}" class="${button}" onclick="ButtonsService.mainButtonsLogic('${button}')">${button}</button>`;
+            this.mainButtonsDiv.innerHTML += `<button id="${button}" class="mainButtonsStyle ${button}" onclick="ButtonsService.mainButtonsLogic('${button}')">${button}</button>`;
         }
         UiService.printContactButton();
         buttonsDiv.scrollIntoView({ block: 'end', behavior: 'smooth' });
@@ -86,7 +86,7 @@ const ButtonsService = {
         AnimationsService.changeImageHead(element.name);
 
         for (const button of element.infoProperties) {
-            this.buttonsDiv.innerHTML += `<button id = "${button}" class="chatBotBtns" onclick="UiService.printAcademyInfo('${button}','${element.nameId}', '${branchName}')">${button}</button>`;
+            this.buttonsDiv.innerHTML += `<button id="${button}" class="chatBotBtns" onclick="UiService.printAcademyInfo('${button}','${element.nameId}', '${branchName}')">${button}</button>`;
        }
        buttonsDiv.scrollIntoView({ block: 'end', behavior: 'smooth' }) 
     },
@@ -96,7 +96,7 @@ const ButtonsService = {
         this.buttonsDiv.innerHTML = "";
 
         for (const button of array) {
-            this.buttonsDiv.innerHTML += `<button id = "${button.nameId}" class="chatBotBtns" onclick="ButtonsService.getInfoTestingButtons('${button.nameId}')">${button.name}</button>`;
+            this.buttonsDiv.innerHTML += `<button id="${button.nameId}" class="chatBotBtns" onclick="ButtonsService.getInfoTestingButtons('${button.nameId}')">${button.name}</button>`;
         }
         buttonsDiv.scrollIntoView({ block: 'end', behavior: 'smooth' });
 
@@ -116,7 +116,7 @@ const ButtonsService = {
 
         for (const button of element.infoProperties) {
             UiService.sleep().then(() => {
-                this.buttonsDiv.innerHTML += `<button id = "${button}" class="chatBotBtns" onclick="UiService.printTestingInfo('${button}','${element.nameId}')">${button}</button>`;
+                this.buttonsDiv.innerHTML += `<button id="${button}" class="chatBotBtns" onclick="UiService.printTestingInfo('${button}','${element.nameId}')">${button}</button>`;
                 buttonsDiv.scrollIntoView({ block: 'end', behavior: 'smooth' });
             });
         }

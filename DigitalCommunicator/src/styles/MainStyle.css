@@ -1,20 +1,4 @@
-/* STYLES FOR THE WHOLE DOCUMENT */
-
-/* *, ::after, ::before {
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "DIN Pro Light", sans-serif;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image: url(../img-avatars/background.png);
-} */
-
+/* VARIABLES */
 :root {
   --dark-blue: #002c5f;
   --light-blue: #e9effe;
@@ -44,7 +28,6 @@ body {
 }
 
 /* STYLES FOR THE CHAT WINDOW */
-
 .main-window {
   border-top: none;
   border-radius: 1.563rem;
@@ -124,6 +107,43 @@ body {
   transform: translateY(-2200px);
 }
 
+.maximizeSpeechBox {
+  width: 200px;
+  height: 80px;
+  margin: 50px auto;
+  border-radius: 6px;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--dark-blue);
+  background-color: #ececec;
+  position: fixed;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 87.5px;
+  bottom: 120px;
+  box-shadow: 0.188rem 0.188rem 1rem rgb(180, 180, 180);
+  display: none;
+}
+
+.speechBox:before {
+  background-color: #ececec;
+  content: "\00a0";
+  height: 16px;
+  position: absolute;
+  top: 69px;
+  right: 5px;
+  transform: rotate( 29deg) skew( -20deg);
+  -moz-transform: rotate( 29deg) skew( -20deg);
+  -ms-transform: rotate( 29deg) skew( -20deg);
+  -o-transform: rotate( 29deg) skew( -20deg);
+  -webkit-transform: rotate( 29deg) skew( -20deg);
+  width: 20px;
+  box-shadow: 0.28rem 0.05rem 1rem -1rem rgb(180, 180, 180);
+}
+
 .chat-window {
   width: 100%;
   height: 73%;
@@ -144,7 +164,6 @@ body {
 }
 
 /* Media queries for chat window vertical responsiveness */
-
 @media screen and (max-height: 789px) {
   .chat-window {
     height: 73%;
@@ -293,7 +312,6 @@ width: 15rem;
 }
 
 /* RECOMMENDED BUTTONS DIV */
-
 .chat-recommended-div {
   width: 100%;
   color: var(--dark-blue);
@@ -310,7 +328,6 @@ width: 15rem;
 }
 
 /* STYLES FOR GAMES ICON */
-
 .chat-games {
   width: 5rem;
   height: 2.188rem;
@@ -333,7 +350,6 @@ width: 15rem;
 }
 
 /* STYLES FOR QUIZZES ICON */
-
 .chat-quizzes {
   width: 5rem;
   height: 2.188rem;
@@ -356,7 +372,6 @@ width: 15rem;
 }
 
 /* STYLES FOR USER INPUT */
-
 .chat-searchInput-div {
   background-color: var(--light-blue);
   bottom: 0;
@@ -423,7 +438,6 @@ width: 15rem;
 }
 
 /* STYLES FOR THE BUTTONS */
-
 .main-chat-buttons-div {
   display: flex;
   flex-direction: column;
@@ -431,54 +445,34 @@ width: 15rem;
   padding-top: 5%;
 }
 
-.Academies {
+.mainButtonsStyle{
   width: 7.5rem;
   height: 3.125rem;
   border-radius: 0.625rem;
   border: none;
-  border-top: 0.313rem solid var(--btn-brown-red);
   box-shadow: 0.188rem 0.188rem 0.313rem var(--shadow);
   background-color: var(--white);
-  color: var(--btn-brown-red);
   margin: 0.313rem;
+}
+
+.Academies {
+  border-top: 0.313rem solid var(--btn-brown-red);
+  color: var(--btn-brown-red);
 }
 
 .Testing {
-  width: 7.5rem;
-  height: 3.125rem;
-  border-radius: 0.625rem;
-  border: none;
   border-top: 0.313rem solid var(--btn-purple);
-  box-shadow: 0.188rem 0.188rem 0.313rem var(--shadow);
-  background-color: var(--white);
   color: var(--btn-purple);
-  margin: 0.313rem;
 }
 
 .Courses {
-  width: 7.5rem;
-  height: 3.125rem;
-  border-radius: 0.625rem;
-  border: none;
   border-top: 0.313rem solid var(--btn-green);
-  box-shadow: 0.188rem 0.188rem 0.313rem var(--shadow);
-  background-color: var(--white);
   color: var(--btn-green);
-  margin: 0.313rem;
 }
 
-/* Contact Us style button */
-
 .contactUs {
-  width: 7.5rem;
-  height: 3.125rem;
-  border-radius: 0.625rem;
-  border: none;
   border-top: 0.313rem solid var(--btn-pink);
-  box-shadow: 0.188rem 0.188rem 0.313rem var(--shadow);
-  background-color: var(--white);
   color: var(--btn-pink);
-  margin: 0.313rem;
 }
 
 .chat-buttons-div {
@@ -566,9 +560,7 @@ button:hover {
 }
 
 /* ANIMATIONS */
-
 /* GAMES & QUIZZES*/
-
 .games-quizzesAnimation {
   animation: games-quizzesKeyFrame 1s ease-in-out 1;
 }
@@ -583,7 +575,6 @@ button:hover {
 }
 
 /* IMG ANIMATION  */
-
 .avatarAnimation {
   animation: avatarKeyFrame 1s ease-in-out 1;
 }
@@ -601,7 +592,6 @@ button:hover {
 }
 
 /* AVATAR NAME */
-
 .fadeIn-avatarName {
   animation: fadeInAvatarNameKeyFrame 1s ease-in-out 0.5s 1;
 }
@@ -616,7 +606,6 @@ button:hover {
 }
 
 /* LOADER ANIMATION */
-
 .typing .dot {
   animation: mercuryTypingAnimation 1.5s infinite ease-in-out;
   background-color: var(--typing-animation-dot-color1);
@@ -660,7 +649,6 @@ button:hover {
 }
 
 /* RECOMMENDED SLIDER */
-
 .slider {
   animation: sliderKeyFrame linear 8s infinite;
 }
@@ -689,7 +677,6 @@ button:hover {
 }
 
 /* ANIMATION FOR BUBBLE WOBBLE */
-
 .jello-horizontal {
   animation: jello-horizontal 4s linear infinite 1s;
 }
@@ -725,7 +712,6 @@ button:hover {
 }
 
 /* STYLES FOR MESSAGES */
-
 .chatBubblesUser {
   margin: 0rem 0.938rem 0.625rem 3.125rem;
   padding: 0.938rem;
@@ -771,7 +757,6 @@ button:hover {
 }
 
 /* LOADER STYLE */
-
 #loader {
   display: none;
 }
@@ -791,7 +776,6 @@ button:hover {
 }
 
 /* SCROLL BARR */
-
 ::-webkit-scrollbar {
   width: 0.344rem;
   padding-top: 1.25rem;
@@ -811,7 +795,6 @@ button:hover {
 }
 
 /* POPUP MODAL STYLES */
-
 .modal {
   display: none;
   position: fixed;
@@ -822,6 +805,7 @@ button:hover {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  backdrop-filter: blur(6px);
 }
 
 .modal-content {
@@ -862,7 +846,6 @@ button:hover {
 }
 
 /* QUIZZES STYLES */
-
 #quizesMessage {
   width: 14rem;
   padding-top: 1rem;

@@ -38,14 +38,14 @@ const AnimationsService = {
             this.chatGames.addEventListener("animationend", () => {
                 this.chatGames.classList.remove("chat-games");
                 this.chatGames.classList.add("chat-games-icon");
-                this.chatGames.innerHTML = `<img src="./CODE/src/img-avatars/games.svg" height="25rem">`;
+                this.chatGames.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/games.svg" height="25rem">`;
             });
 
             this.chatQuizzes.classList.add("games-quizzesAnimation");
             this.chatQuizzes.addEventListener("animationend", () => {
                 this.chatQuizzes.classList.remove("chat-quizzes");
                 this.chatQuizzes.classList.add("chat-quizzes-icon");
-                this.chatQuizzes.innerHTML = `<img src="./CODE/src/img-avatars/quizzes.svg" height="25rem">`;
+                this.chatQuizzes.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/quizzes.svg" height="25rem">`;
             });
         }
     },
@@ -78,14 +78,14 @@ const AnimationsService = {
         switch (academy) {
             case 'programming':
             case 'Web Development':
-                AnimationsService.avatarImgDiv.style.backgroundImage = "url(./CODE/src/img-avatars/CODE.png)";
+                AnimationsService.avatarImgDiv.style.backgroundImage = "url(./DigitalCommunicator/src/img-avatars/CODE.png)";
                 AnimationsService.chatName.innerHTML = "Brian<br>Web Development";
                 AnimationsService.chatBotBubbleName = "Brian";
                 break;
             case 'computerNetworks':
             case 'CloudOps Network Engineer':
             case 'Security Specialist':
-                AnimationsService.avatarImgDiv.style.backgroundImage = "url(./CODE/src/img-avatars/Networks.png)";
+                AnimationsService.avatarImgDiv.style.backgroundImage = "url(./DigitalCommunicator/src/img-avatars/Networks.png)";
                 AnimationsService.chatName.innerHTML = "Jimmy<br>Computer Networks";
                 AnimationsService.chatBotBubbleName = "Jimmy";
                 break;
@@ -93,35 +93,35 @@ const AnimationsService = {
             case 'Graphic Designer':
             case 'Web Designer':
             case 'Game Designer':
-                AnimationsService.avatarImgDiv.style.backgroundImage = "url(./CODE/src/img-avatars/DESIGN.png)";
+                AnimationsService.avatarImgDiv.style.backgroundImage = "url(./DigitalCommunicator/src/img-avatars/DESIGN.png)";
                 AnimationsService.chatName.innerHTML = "Michelangelo<br>Design Academy";
                 AnimationsService.chatBotBubbleName = "Michelangelo";
                 break;
             case 'softwareTesting':
             case 'Software Tester':
-                AnimationsService.avatarImgDiv.style.backgroundImage = "url(./CODE/src/img-avatars/QA.png)";
+                AnimationsService.avatarImgDiv.style.backgroundImage = "url(./DigitalCommunicator/src/img-avatars/QA.png)";
                 AnimationsService.chatName.innerHTML = "Jenny<br>Software Testing";
                 AnimationsService.chatBotBubbleName = "Jenny";
                 break;
             // case 'dataScience':
-                // AnimationsService.avatarImgDiv.style.backgroundImage = "url(./CODE/src/img-avatars/.png)";
+                // AnimationsService.avatarImgDiv.style.backgroundImage = "url(./src/img-avatars/.png)";
                 // AnimationsService.chatName.innerHTML = "Bradley<br>Data Science";
                 // AnimationsService.chatBotBubbleName = "Bradley";
             //     break;
             // case 'digitalMarketing':
-                // AnimationsService.avatarImgDiv.style.backgroundImage = "url(./CODE/src/img-avatars/.png)";
+                // AnimationsService.avatarImgDiv.style.backgroundImage = "url(./src/img-avatars/.png)";
                 // AnimationsService.chatName.innerHTML = "Connor<br>Digital Marketing";
                 // AnimationsService.chatBotBubbleName = "Connor";
             //     break;
             // case 'iThink':
-                // AnimationsService.avatarImgDiv.style.backgroundImage = "url(./CODE/src/img-avatars/.png)";
+                // AnimationsService.avatarImgDiv.style.backgroundImage = "url(./src/img-avatars/.png)";
                 // AnimationsService.chatName.innerHTML = "Benji<br>iThink Academy";
                 // AnimationsService.chatBotBubbleName = "Benji";
             //     break;
             case 'haralampiye':
-                AnimationsService.avatarImgDiv.style.backgroundImage = "url(./CODE/src/img-avatars/HARALAMPIYE.png)";
-                AnimationsService.chatName.innerHTML = "Mickey<br>SEDC Chat Bot";
-                AnimationsService.chatBotBubbleName = "Mickey";
+                AnimationsService.avatarImgDiv.style.backgroundImage = "url(./DigitalCommunicator/src/img-avatars/HARALAMPIYE.png)";
+                AnimationsService.chatName.innerHTML = "Haralampiye<br>SEDC Chat Bot";
+                AnimationsService.chatBotBubbleName = "Haralampiye";
                 break;
         }
     },
@@ -140,11 +140,11 @@ const AnimationsService = {
 
                 this.chatGames.classList.remove("chat-games");
                 this.chatGames.classList.add("chat-games-icon");
-                this.chatGames.innerHTML = `<img src="./CODE/src/img-avatars/games.svg" height="25rem">`;
+                this.chatGames.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/games.svg" height="25rem">`;
 
                 this.chatQuizzes.classList.remove("chat-quizzes");
                 this.chatQuizzes.classList.add("chat-quizzes-icon");
-                this.chatQuizzes.innerHTML = `<img src="./CODE/src/img-avatars/quizzes.svg" height="25rem">`;
+                this.chatQuizzes.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/quizzes.svg" height="25rem">`;
 
                 this.avatarImgDiv.style.marginTop = "-1.25rem";
                 this.avatarImgDiv.style.marginLeft = "1.25rem";

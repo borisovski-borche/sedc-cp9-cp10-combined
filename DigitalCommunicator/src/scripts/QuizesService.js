@@ -32,27 +32,14 @@ const QuizzesService = {
             for (let quiz in DataService.cachedQuizzes) {
                 inner +=
                     `<button id="${quiz}" class="btnCard" onclick="QuizzesService.getQuiz('${quiz}')">
-                        <div class="btnCardName">${QuizzesService.fixQuizName(quiz)}</div>
-                        <div class="btnCardDescription">Description</div>
+                        <div class="btnCardName">${quiz.replace(/-/g, " ")}</div>
+                        <div class="btnCardDescription">Try your hand at this quiz!</div>
                     </button>`;
             }
             inner += `</div>`
             QuizzesService.gamesAndQuizzesWindow.innerHTML = inner;
             UiService.disableGamesAndQuizzesButtons(false);
         });
-    },
-
-    //Fixes the name (json id)
-    fixQuizName: function (input) {
-        let name = "";
-        for(let char of input){
-            if(char === "-"){
-                name += " ";
-            }else{
-                name += char;
-            }
-        }
-        return name;
     },
 
     //Prints the chosen quiz from JSON

@@ -264,7 +264,7 @@ const SearchInputService = {
 
     // Searches for a curse word and promotes looove
     searchForCurseWords: function () {
-        let curseWords = ["idiot", "fuck", "suck", "cock", "love you", "f***"];
+        let curseWords = ["idiot", "fuck", "suck", "cock", "love you", "f***", "stupid", "dumb"];
 
         for (let curseWord of curseWords) {
             if (SearchInputService.inputString.toLowerCase().includes(curseWord)) {

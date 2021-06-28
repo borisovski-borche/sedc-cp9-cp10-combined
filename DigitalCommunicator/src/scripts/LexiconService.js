@@ -1,5 +1,4 @@
 const LexiconService = {
-
     // Checks if input string contains alternatives to the keywords and returns new modified string with those keywords
     checkForKeywords: function (inputString) {
         let keywordModifiedString = inputString;
