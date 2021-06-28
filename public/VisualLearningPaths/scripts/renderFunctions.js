@@ -19,10 +19,12 @@ const renderParagraph = data => {
     text: text => text,
   };
 
-  const paragraphBodyHTML = data.content.map(item => {
-    const key = Object.keys(item)[0];
-    return renderMethods[key](item[key]);
-  }).join(` `);
+  const paragraphBodyHTML = data.content
+    .map(item => {
+      const key = Object.keys(item)[0];
+      return renderMethods[key](item[key]);
+    })
+    .join(` `);
 
   return `
       <h3 class="academy__sub-heading">${data.title}</h3>
@@ -64,17 +66,20 @@ const renderCardContainer = data => {
 };
 
 function renderAcademy(academyData) {
+  const { academyContent, title } = academyData;
+
   const renderMethods = {
     paragraph: renderParagraph,
     cardContainer: renderCardContainer,
   };
+  const academyBodyHTML = academyContent
+    .map(item => {
+      const key = Object.keys(item)[0];
+      return renderMethods[key](item[key]);
+    })
+    .join(` `);
 
-  const academyBodyHTML = academyData.academyContent.map(item => {
-    const key = Object.keys(item)[0];
-    return renderMethods[key](item[key]);
-  }).join(` `)
-
-  return `<h1 class="academy__heading">${academyData.title}</h1> ${academyBodyHTML}`;
+  return `<h1 class="academy__heading">${title}</h1> ${academyBodyHTML}`;
 }
 
 //Modal window render fuction
@@ -121,7 +126,6 @@ const renderModal = (id, data) => {
 //category cards render function
 
 const renderCategoryCard = data => {
-  console.log(data.moduleCardData.content[0]);
   const listHTML = data.moduleCardData.content
     .map(item => {
       return `<li>${item}</li>`;
@@ -138,7 +142,9 @@ const renderCategoryCard = data => {
             <ul>
             ${listHTML}
             </ul>
-            <a href="#" id=${data.id} class="ccard-link"> GO TO ACADEMY </a>
+            <a href="#" id="ccard-${
+              data.id
+            }" class="ccard-link"> GO TO ACADEMY </a>
 
         </figure>
     </div>
