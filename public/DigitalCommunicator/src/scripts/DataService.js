@@ -11,7 +11,6 @@ const DataService = {
             DataService.cachedData = await data.Data;
             DataService.cachedReplyMessages = await data.ReplyMessages;
             ButtonsService.getMainButtons(data.Data);
-            console.log(data.ReplyMessages);
         } catch (error) {
             AnimationsService.chatWindow.innerHTML =
                 `<div id="errorWrapper" class="errorWrapper"> <img src="./DigitalCommunicator/src/img-avatars/errorEmo.png" alt="Error Img">

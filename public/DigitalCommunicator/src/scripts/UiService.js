@@ -241,21 +241,24 @@ const UiService = {
         buttonsDiv.scrollIntoView({ block: 'end', behavior: 'smooth' });
     },
 
+    //Enables/Disables HTML scroll depending on the case
     HTMLScrollCheck: function () {
         mainWindow.style.height === "100%" ? document.getElementsByTagName("html")[0].style.overflowY = "hidden" : document.getElementsByTagName("html")[0].style.overflowY = "auto";
     },
 
+    //Renders the academy page
     openAcademy: function (academyName) {
-        let academy;
         fetch("https://borisovski-borche.github.io/cp-09-data/data/db.json")
             .then(res => res.json())
             .then(data => {
+                let academy;
                 for(let element of data.academies){
                     if(element.title.includes(academyName)){
                         academy = element;
                     }
                 }
-                renderAcademy(academy);
+
+                urlIdHandler(data.academies, academy.id);
                 let id = academy.id;
                 window.history.pushState({ id }, "", `/${id}`);
 
