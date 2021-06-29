@@ -5,7 +5,7 @@ const ContactUsForm = {
 
         ApplyAndPriceService.popUp.innerHTML = `
         <div class="container" id="contactUsForm">
-            <h1 class="formHeader">Contact our sales team!</h1>
+            <h1 class="formHeader">Contact us!</h1>
             <form action="https://formsubmit.co/nikola.veselinovski@gmail.com" method="POST">
                 <label>First Name</label>
                 <input type="text" id="fname" name="FirstName" placeholder="Your name.." required>

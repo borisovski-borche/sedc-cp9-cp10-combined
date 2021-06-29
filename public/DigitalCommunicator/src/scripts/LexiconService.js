@@ -118,7 +118,8 @@ const LexiconService = {
             inputString.toLowerCase().includes("iThink") ||
             inputString.toLowerCase().includes("i Think") ||
             inputString.toLowerCase().includes("child") ||
-            inputString.toLowerCase().includes("kid")
+            inputString.toLowerCase().includes("kid") ||
+            inputString.toLowerCase().includes("ithink")
         )
             keywordModifiedString += "iThink Academy";
 

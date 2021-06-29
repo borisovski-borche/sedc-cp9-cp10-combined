@@ -62,7 +62,7 @@ const ButtonsService = {
   //Logic for the buttons (Checks If the array holds the real data)
   getDataButtons: function (buttonId, branchName, searchString) {
     this.buttonsDiv.innerHTML = "";
-    AnimationsService.changeImageHead(buttonId);
+    branchName === "Academies" ? AnimationsService.changeImageHead(buttonId) : AnimationsService.changeImageHead("haralampiye");
 
     let data = DataService.cachedData[branchName];
     let check = false;
@@ -105,13 +105,13 @@ const ButtonsService = {
   //Prints the buttons for Object info
   getInfoButtons: function (element, branchName) {
     this.buttonsDiv.innerHTML = "";
-    AnimationsService.changeImageHead(element.name);
+    branchName === "Academies" ? AnimationsService.changeImageHead(element.name) : AnimationsService.changeImageHead("haralampiye");
 
     for (const button of element.infoProperties) {
       this.buttonsDiv.innerHTML += `<button id="${button}" class="chatBotBtns" onclick="UiService.printAcademyInfo('${button}','${element.nameId}', '${branchName}')">${button}</button>`;
     }
 
-    if (element.academyBtn !== undefined){
+    if (element.academyBtn !== undefined) {
       this.buttonsDiv.innerHTML += `<button id="openAcademy" class="chatBotBtns" onclick="UiService.openAcademy('${element.academyBtn}')">Go to Web Page</button>`;
     }
     buttonsDiv.scrollIntoView({ block: "end", behavior: "smooth" });

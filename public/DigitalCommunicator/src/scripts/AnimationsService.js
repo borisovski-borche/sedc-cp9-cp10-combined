@@ -69,7 +69,7 @@ const AnimationsService = {
         if(window.innerWidth < 821){
             AnimationsService.chatName.style.marginTop = "0rem";
         }else{
-            if(academy === 'haralampiye'){
+            if(academy === 'haralampiye' || academy === 'dataScience' || academy === undefined){
                 AnimationsService.chatName.style.marginTop = "0.9rem";
             }else{
                 AnimationsService.chatName.style.marginTop = "0.3rem";

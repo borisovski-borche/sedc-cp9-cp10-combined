@@ -113,6 +113,7 @@ const QuizzesService = {
 
         const empty = (x) => x === "";
         if (userAnswers.some(empty)) {
+            QuizzesService.form.style.display = "flex";
             QuizzesService.form.innerHTML = '<p class="somethingWentWrongMessage">All the questions must be answered before you submit them! <br><br>Please try again!</p>';
             return;
         }
@@ -124,7 +125,8 @@ const QuizzesService = {
             }
         });
 
-        QuizzesService.form.innerHTML = `<p id="quizResult">You got <span id="quizSpan" >${Math.ceil(score)}%</span> of the questions right!</p>`;
+        QuizzesService.form.style.display = "flex";
+        QuizzesService.form.innerHTML = `<p class="somethingWentWrongMessage" id="quizResult">You got ${Math.ceil(score)}% of the questions right!</p>`;
     },
 
     //Prints a message if something is wrong with the quiz

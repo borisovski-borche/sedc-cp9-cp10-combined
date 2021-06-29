@@ -1354,7 +1354,7 @@
 		"Computer-Networks": [
 			{
 				"id": "1",
-				"question": "every computer looking to access the Internet would be known as?",
+				"question": "Every computer looking to access the Internet would be known as?",
 				"answer1": "Client",
 				"answer2": "Hub",
 				"answer3": "Desktop",
@@ -1534,7 +1534,7 @@
 			},
 			{
 				"id": "21",
-				"question": "allows information to be delivered to other computers or electronic devices that are connected:",
+				"question": "Allows information to be delivered to other computers or electronic devices that are connected:",
 				"answer1": "Network",
 				"answer2": "Web browser",
 				"answer3": "Hub",
@@ -2168,15 +2168,14 @@
 			}
 		]
 	},
-
-	"Descriptions" : {
-		"Web-Development" : "Thinking of becoming a Web Developer?",
-		"Graphic-Design" : "Use your artistic talent to become a digital artist!",
-		"Web-Design":  "If you have an eye for design you'll enjoy the Web Design!",
+	"Descriptions": {
+		"Web-Development": "Thinking of becoming a Web Developer?",
+		"Graphic-Design": "Use your artistic talent to become a digital artist!",
+		"Web-Design": "If you have an eye for design you'll enjoy the Web Design!",
 		"Game-Design": "Turn your passion for playing video games into your everyday job!",
-		"Digital-Marketing" : "Use your communication skills to promote brands by using digital technologies!",
-		"Computer-Networks" : "You wanna go deeper into computer science?",
-		"Software-Testing" : "If you always manage to find faults, you'll enjoy searching for bugs!",
-		"Data-Science" : "Use your data analyzing and gathering skills to help predict and solve problems!"
+		"Digital-Marketing": "Use your communication skills to promote brands by using digital technologies!",
+		"Computer-Networks": "You wanna go deeper into computer science?",
+		"Software-Testing": "If you always manage to find faults, you'll enjoy searching for bugs!",
+		"Data-Science": "Use your data analyzing and gathering skills to help predict and solve problems!"
 	}
 }
