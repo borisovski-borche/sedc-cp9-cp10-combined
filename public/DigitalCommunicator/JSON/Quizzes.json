@@ -2173,10 +2173,10 @@
 		"Web-Development" : "Thinking of becoming a Web Developer?",
 		"Graphic-Design" : "Use your artistic talent to become a digital artist!",
 		"Web-Design":  "If you have an eye for design you'll enjoy the Web Design!",
-		"Game-Design": "Turn your passion for playing video games into your everyday job that you'll love!",
-		"Digital-Marketing" : "Use your communication skills to promote brands by using online based digital technologies!",
+		"Game-Design": "Turn your passion for playing video games into your everyday job!",
+		"Digital-Marketing" : "Use your communication skills to promote brands by using digital technologies!",
 		"Computer-Networks" : "You wanna go deeper into computer science?",
-		"Software-Testing" : "If you're a perfectionist who always manages to find faults, you'll enjoy searching for software bugs!",
-		"Data-Science" : "Use your skills in the process of gathering and analyzing data to help predict and solve problems!"
+		"Software-Testing" : "If you always manage to find faults, you'll enjoy searching for software bugs!",
+		"Data-Science" : "Use your data analyzing and gathering skills to help predict and solve problems!"
 	}
 }
