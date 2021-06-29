@@ -236,17 +236,31 @@ const UiService = {
     },
 
     //Prints contact button form
-    printContactButton: function(){
+    printContactButton: function () {
         ButtonsService.mainButtonsDiv.innerHTML += `<button class="mainButtonsStyle contactUs" id="contactUs" onclick="ContactUsForm.printContactUsForm()"> Contact Us </button>`;
         buttonsDiv.scrollIntoView({ block: 'end', behavior: 'smooth' });
     },
 
-    HTMLScrollCheck: function(){
+    HTMLScrollCheck: function () {
         mainWindow.style.height === "100%" ? document.getElementsByTagName("html")[0].style.overflowY = "hidden" : document.getElementsByTagName("html")[0].style.overflowY = "auto";
     },
 
-    openAcademy: function(academyName){
-        chatMinimize.click();
-        console.log(academyName);
+    openAcademy: function (academyName) {
+        let academy;
+        fetch("https://borisovski-borche.github.io/cp-09-data/data/db.json")
+            .then(res => res.json())
+            .then(data => {
+                for(let element of data.academies){
+                    if(element.title.includes(academyName)){
+                        academy = element;
+                    }
+                }
+                renderAcademy(academy);
+                let id = academy.id;
+                window.history.pushState({ id }, "", `/${id}`);
+
+                ButtonsService.getMainButtons(DataService.cachedData);
+                chatMinimize.click();
+        });
     }
 };//PROPERTIES: Chat history div, Recommended slide div, Modal pop up wrapper div

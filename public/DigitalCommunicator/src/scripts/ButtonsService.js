@@ -111,7 +111,7 @@ const ButtonsService = {
       this.buttonsDiv.innerHTML += `<button id="${button}" class="chatBotBtns" onclick="UiService.printAcademyInfo('${button}','${element.nameId}', '${branchName}')">${button}</button>`;
     }
 
-    if (branchName === "Academies") {
+    if (branchName === "Academies" && !element.name.includes('iThink')){
       this.buttonsDiv.innerHTML += `<button id="openAcademy" class="chatBotBtns" onclick="UiService.openAcademy('${element.name}')">Go to Web Page</button>`;
     }
     buttonsDiv.scrollIntoView({ block: "end", behavior: "smooth" });

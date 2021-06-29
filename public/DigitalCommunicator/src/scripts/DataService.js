@@ -24,7 +24,7 @@ const DataService = {
     //Fetches all data from the Quizzes questions json
     fetchQuizzes: async function () {
         try {
-            let response = await fetch(`https://raw.githubusercontent.com/sedc-codecademy/sp2021-cp10-dsc/main/JSON/Quizzes.json`);
+            let response = await fetch(`https://raw.githubusercontent.com/sedc-codecademy/sp2021-cp10-dsc/development/JSON/Quizzes.json`);
             let data = await response.json();
             DataService.cachedQuizzes = await data;
         } catch (error) {

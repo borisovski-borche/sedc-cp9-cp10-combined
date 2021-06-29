@@ -29,11 +29,11 @@ const QuizzesService = {
 
             inner += `<div id="twoRowBtnDiv" class="twoRowBtnFlex">`;
 
-            for (let quiz in DataService.cachedQuizzes) {
+            for (let quiz in DataService.cachedQuizzes.Quizzes) {
                 inner +=
                     `<button id="${quiz}" class="btnCard" onclick="QuizzesService.getQuiz('${quiz}')">
                         <div class="btnCardName">${quiz.replace(/-/g, " ")}</div>
-                        <div class="btnCardDescription">Try your hand at this quiz!</div>
+                        <div class="btnCardDescription">${DataService.cachedQuizzes.Descriptions[quiz]}</div>
                     </button>`;
             }
             inner += `</div>`
@@ -44,7 +44,7 @@ const QuizzesService = {
 
     //Prints the chosen quiz from JSON
     getQuiz: function (id) {
-        let data = DataService.cachedQuizzes[id];
+        let data = DataService.cachedQuizzes.Quizzes[id];
 
         UiService.displayModalWindow("quizzes");
         if (data === undefined) {
