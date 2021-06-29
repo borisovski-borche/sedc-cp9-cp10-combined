@@ -1,4 +1,5 @@
 /* VARIABLES */
+
 :root {
   --dark-blue: #002c5f;
   --light-blue: #e9effe;
@@ -28,6 +29,7 @@
 }
 
 /* STYLES FOR THE CHAT WINDOW */
+
 .main-window {
   border-top: none;
   border-radius: 15px;
@@ -124,7 +126,7 @@
   justify-content: center;
   right: 87.5px;
   bottom: 120px;
-  box-shadow: 0.188rem 0.188rem 1rem rgb(180, 180, 180);
+  box-shadow: 0.188rem 0.188rem 1rem rgb(71, 71, 71);
   display: none;
 }
 
@@ -164,6 +166,7 @@
 }
 
 /* Media queries for chat window vertical responsiveness */
+
 @media screen and (max-height: 789px) {
   .chat-window {
     height: 73%;
@@ -300,7 +303,7 @@
 }
 
 .errorWrapper :first-child {
-width: 15rem;
+  width: 15rem;
 }
 
 .errorText {
@@ -312,6 +315,7 @@ width: 15rem;
 }
 
 /* RECOMMENDED BUTTONS DIV */
+
 .chat-recommended-div {
   width: 100%;
   color: var(--dark-blue);
@@ -328,6 +332,7 @@ width: 15rem;
 }
 
 /* STYLES FOR GAMES ICON */
+
 .chat-games {
   width: 5rem;
   height: 2.188rem;
@@ -350,6 +355,7 @@ width: 15rem;
 }
 
 /* STYLES FOR QUIZZES ICON */
+
 .chat-quizzes {
   width: 5rem;
   height: 2.188rem;
@@ -372,6 +378,7 @@ width: 15rem;
 }
 
 /* STYLES FOR USER INPUT */
+
 .chat-searchInput-div {
   background-color: var(--light-blue);
   bottom: 0;
@@ -438,6 +445,7 @@ width: 15rem;
 }
 
 /* STYLES FOR THE BUTTONS */
+
 .main-chat-buttons-div {
   display: flex;
   flex-direction: column;
@@ -445,7 +453,7 @@ width: 15rem;
   padding-top: 5%;
 }
 
-.mainButtonsStyle{
+.mainButtonsStyle {
   width: 7.5rem;
   height: 3.125rem;
   border-radius: 0.625rem;
@@ -560,7 +568,9 @@ button:hover {
 }
 
 /* ANIMATIONS */
+
 /* GAMES & QUIZZES*/
+
 .games-quizzesAnimation {
   animation: games-quizzesKeyFrame 1s ease-in-out 1;
 }
@@ -575,6 +585,7 @@ button:hover {
 }
 
 /* IMG ANIMATION  */
+
 .avatarAnimation {
   animation: avatarKeyFrame 1s ease-in-out 1;
 }
@@ -592,6 +603,7 @@ button:hover {
 }
 
 /* AVATAR NAME */
+
 .fadeIn-avatarName {
   animation: fadeInAvatarNameKeyFrame 1s ease-in-out 0.5s 1;
 }
@@ -606,6 +618,7 @@ button:hover {
 }
 
 /* LOADER ANIMATION */
+
 .typing .dot {
   animation: mercuryTypingAnimation 1.5s infinite ease-in-out;
   background-color: var(--typing-animation-dot-color1);
@@ -649,6 +662,7 @@ button:hover {
 }
 
 /* RECOMMENDED SLIDER */
+
 .slider {
   animation: sliderKeyFrame linear 8s infinite;
 }
@@ -677,6 +691,7 @@ button:hover {
 }
 
 /* ANIMATION FOR BUBBLE WOBBLE */
+
 .jello-horizontal {
   animation: jello-horizontal 4s linear infinite 1s;
 }
@@ -712,6 +727,7 @@ button:hover {
 }
 
 /* STYLES FOR MESSAGES */
+
 .chatBubblesUser {
   margin: 0rem 0.938rem 0.625rem 3.125rem;
   padding: 0.938rem;
@@ -757,6 +773,7 @@ button:hover {
 }
 
 /* LOADER STYLE */
+
 #loader {
   display: none;
 }
@@ -776,6 +793,7 @@ button:hover {
 }
 
 /* SCROLL BARR */
+
 ::-webkit-scrollbar {
   width: 0.344rem;
   padding-top: 1.25rem;
@@ -795,6 +813,7 @@ button:hover {
 }
 
 /* POPUP MODAL STYLES */
+
 .modal {
   display: none;
   position: fixed;
@@ -816,8 +835,8 @@ button:hover {
   margin: auto;
   padding: 2%;
   border: 1px solid (var(--dark-blue));
-  width: 35%;
-  height: 70%;
+  width: 90%;
+  height: 90%;
   overflow: hidden;
 }
 
@@ -826,7 +845,7 @@ button:hover {
   margin-left: 100%;
   font-size: 28px;
   font-weight: bold;
-  margin-top: -6%;
+  margin-top: -2%;
 }
 
 .close:hover, .close:focus {
@@ -840,12 +859,13 @@ button:hover {
   justify-content: center;
   align-content: center;
   width: 100%;
-  height: 99%;
-  padding-bottom: 5%;
+  height: 100%;
+  /* padding-bottom: 5%; */
   overflow-y: auto;
 }
 
 /* QUIZZES STYLES */
+
 #quizesMessage {
   width: 14rem;
   padding-top: 1rem;
@@ -862,7 +882,7 @@ button:hover {
   justify-content: center;
 }
 
-.somethingWentWrongMessage{
+.somethingWentWrongMessage {
   width: 14rem;
   margin: 20% auto 0 auto;
   color: #9D1662;
@@ -921,6 +941,23 @@ button:hover {
 }
 
 /* GAMES STYLES */
+.iframeContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.responsiveIframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #gamesMessage {
   width: 14rem;
   padding-top: 1rem;
@@ -932,6 +969,7 @@ button:hover {
 }
 
 /* CONTACT-FORM STYLES */
+
 input[type=text], textarea {
   width: 100%;
   padding: 12px;
@@ -973,7 +1011,7 @@ input[type=email] {
 }
 
 .formHeader {
-  padding-bottom: 12%;
+  padding-bottom: 2%;
   font-size: 150%;
   text-align: center;
 }

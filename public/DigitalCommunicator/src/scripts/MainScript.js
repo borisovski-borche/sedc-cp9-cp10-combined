@@ -2,9 +2,10 @@
 let chatMinimize = document.getElementById("chatMinimize");
 let chatMaximize = document.getElementById("chatMaximize");
 let mainWindow = document.getElementById("mainWindow");
-let maximizeSpeechBox= document.getElementById("maximizeSpeechBox");
+let maximizeSpeechBox = document.getElementById("maximizeSpeechBox");
 let searchInputWraper = document.getElementById("searchInputWraper");
 let isChatBotOpened = true;
+let firstTimePageLoaded = true;
 
 //Minimize event
 chatMinimize.addEventListener("click", () => {
@@ -20,8 +21,13 @@ chatMinimize.addEventListener("click", () => {
         isChatBotOpened = false;
         chatMaximize.classList.add("jello-horizontal");
         setTimeout(() => {
-            if(!isChatBotOpened){
-                maximizeSpeechBox.innerHTML = "I'll be here if you need me just click on my handsome face!"
+            if (!isChatBotOpened) {
+                if (firstTimePageLoaded) {
+                    maximizeSpeechBox.innerHTML = "Hey there partner! I'm the SEDC chatbot! Do you wanna talk?"
+                } else {
+                    maximizeSpeechBox.innerHTML = "I'll be here if you need me just click on my handsome face!"
+                }
+                firstTimePageLoaded = false;
                 maximizeSpeechBox.style.display = "flex";
                 setTimeout(() => {
                     maximizeSpeechBox.style.display = "none";
@@ -35,6 +41,7 @@ chatMinimize.addEventListener("click", () => {
 //Maximize event
 chatMaximize.addEventListener("click", () => {
     if (!isChatBotOpened) {
+        this.mainWindow.style.display = "block";
         chatMaximize.classList.remove("jello-horizontal");
         maximizeSpeechBox.style.display = "none";
         setTimeout(() => {
@@ -62,7 +69,7 @@ ApplyAndPriceService.closeModalButton.addEventListener("click", () => {
 //Modal close on side
 window.addEventListener("click", (event) => {
     if (event.target == ApplyAndPriceService.myModal) {
-        ApplyAndPriceService.myModal.style.display = "none";
+        ApplyAndPriceService.closeModalButton.click();
     }
 });
 
@@ -79,12 +86,12 @@ window.addEventListener("resize", () => {
         UiService.toggleDisplayView(QuizzesService.gamesAndQuizzesWindow, AnimationsService.chatWindow);
     }
 
-    if(window.innerWidth < 821){
+    if (window.innerWidth < 821) {
         AnimationsService.chatName.style.marginTop = "0rem";
-    }else{
-        if(AnimationsService.chatName.innerText.includes("Haralampiye")){
+    } else {
+        if (AnimationsService.chatName.innerText.includes("Haralampiye")) {
             AnimationsService.chatName.style.marginTop = "0.9rem";
-        }else{
+        } else {
             AnimationsService.chatName.style.marginTop = "0.3rem";
         }
     }
@@ -114,6 +121,7 @@ if (ua.indexOf('firefox') > -1) {
 //Quizzes form submit
 QuizzesService.form.addEventListener('submit', QuizzesService.checkRightAnswers);
 
+this.mainWindow.style.display = "none";
 window.addEventListener("load", chatMinimize.click());
 
 DataService.getDataAsync();

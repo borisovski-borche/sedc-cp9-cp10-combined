@@ -15,7 +15,6 @@
                   "name": "Web Development",
                   "nameId": "webDevelopment",
                   "overview": "At the end of this 3 semesters study program you will develop an equivalent skill set and knowledge as an entry level web developer for the exciting and in-demand software development industry.",
-                  "moreinfo": "https://www.sedc.mk/academy/academy-for-programing/web-developer/",
                   "timeline": "Duration: 12 months | 3 semesters \nClasses: 480 \n\nStart: November \nEnd: October/November \n\nLectures will be held twice a week and every 2nd Saturday.",
                   "jobopportunities": "You may get employed as the following titles: Web Developer, Software Developer, Front-End Web Developer, Full-Stack Web Developer, Technical trainer, Technical consultant",
                   "reply": [
@@ -47,7 +46,6 @@
                   "name": "CloudOps Network Engineer",
                   "nameId": "cloudOps",
                   "overview": "During the studies we’ll learn about the techniques for architecting, deploying, and maintaining applications, including how to use Cloud as the infrastructure for existing and new services. A lot of practical activities will prepare you to achieve hands-on and real-world skills essential for the evolving IT market.",
-                  "moreinfo": "https://www.sedc.mk/academy/academy-for-computer-networks/cloudops-network-engineer/",
                   "timeline": "Duration: 12 months | 3 semesters \nClasses: 830 \n\nStart: November \nEnd: November \n\nLectures: Every day (Monday – Friday) from 12:30 pm until 16:00 pm",
                   "jobopportunities": "You may get employed as the following titles: following titles: CloudOps Engineer, Cloud Engineer, Cloud Administrator, Cloud Support Specialist, Cloud Infrastructure Architect, Network technician, Network administrator, Network Engineer, Network support, Server administration, Network designer, System Administrator, System Engineer, Desktop Support Technician, Desktop Support Engineer",
                   "reply": [
@@ -67,7 +65,6 @@
                   "name": "Security Specialist",
                   "nameId": "securitySpecialist",
                   "overview": "Security Specialists and Network Administrators are usually familiar with network components, traffic, performance and utilization, network topology, location of each system, security policy, etc.Ranged as a beginner to intermediate level study program, it is well suited for anyone looking to get their foot in the Cyber Security door as well as people that want to hone and advance their skills.",
-                  "moreinfo": "https://www.sedc.mk/academy/academy-for-computer-networks/security-specialist/",
                   "timeline": "Duration: 6 months | 2 semesters \nClasses: 250 \n\nStart: November \nEnd: April \n\nLectures: 2-3 time a week from 5:30 pm until 9:00 pm",
                   "jobopportunities": "You may get employed as the following titles: IT Security Analyst, IT Network Security Engineer, IT Network Security Administrator, IT Security Specialist, IT Security Officer, Penetration Tester, Security Analyst, CloudSecOps, Cloud Security Engineer, Cloud Security Specialist",
                   "reply": [
@@ -99,7 +96,6 @@
                   "name": "Graphic Designer",
                   "nameId": "graphicDesigner",
                   "overview": "Students will be lead through the nuanced skill-development process to achieve excellence in Logo Design, Typography, Packaging, Printing, Web Design, User Experience, User Interface, Branding and Advertising.",
-                  "moreinfo": "https://www.sedc.mk/academy/academy-for-design/graphic-designer/",
                   "timeline": "Duration: 9 months | 2 semesters \nClasses: 540 \n\nStart: October \nEnd: June \n\nLectures: Every day (Monday – Friday) from 8:30 am until 12:00 pm",
                   "jobopportunities": "You may get employed as the following titles: Creative/Art Director, Logo Designer, Brand Identity Designer, Photo Editing/ Photoshop Artist, Layout Artist",
                   "reply": [
@@ -119,7 +115,6 @@
                   "name": "Web Designer",
                   "nameId": "webDesigner",
                   "overview": "Students will learn how to plan and design compelling and interactive websites, how to change and make an impact with HTML and CSS, PHP and jQuery. They will also learn technical software programs and accessibility standards, color, typography, and composition and will create their own dynamic portfolio.",
-                  "moreinfo": "https://www.sedc.mk/academy/academy-for-design/web-design/",
                   "timeline": "Duration: 9 months | 2 semesters \nClasses: 540 \n\nStart: October \nEnd: June \n\nLectures: Every day (Monday – Friday) from 5:30 pm until 9:00 pm",
                   "jobopportunities": "You may get employed as the following titles: Front End Web Developer, Back End Web Developer, UX/UI Web Designer",
                   "reply": [
@@ -139,7 +134,6 @@
                   "name": "Game Designer",
                   "nameId": "gameDesigner",
                   "overview": "Academy for Game Design combines technical knowledge and artistic skill to produce a portfolio in line with game design industry. Students will learn to design characters and its environments, image rendering, character development and animation.",
-                  "moreinfo": "https://www.sedc.mk/academy/academy-for-design/3d-animator/",
                   "timeline": "Duration: 9 months | 2 semesters \nClasses: 540 \n\nStart: November \nEnd: July \n\nLectures will be held every day (Mon-Fri).",
                   "jobopportunities": "You may get employed as the following titles: Game Programmer, Game Designer, Game Technical Artist",
                   "reply": [
@@ -171,7 +165,6 @@
                   "name": "Software Tester",
                   "nameId": "softwareTester",
                   "overview": "This curriculum is focused on the latest agile testing principles combined with traditional software testing concepts. In addition candidates are getting IT knowledge related to Agile, Scrum and Kanban, SQL, Operating systems and Diagrams such as UML, BPMN and Mind Maps which is crucial for a Software Tester.",
-                  "moreinfo": "https://www.sedc.mk/academy/academy-for-software-testing/software-tester/",
                   "timeline": "Duration: 6 months | 2 semesters \nClasses: 210 \n\nStart: March \nEnd: August \n\nLectures will be held twice a week.",
                   "jobopportunities": "You may get employed as the following titles: Software Testing Engineer, Software Testing Analyst, Automates Testing Engineer, Software Engineer, Technical Consultant.",
                   "reply": [
@@ -203,7 +196,6 @@
                   "name": "Data Scientist",
                   "nameId": "dataScientist",
                   "overview": "Having in mind that a good Data Scientist means not only being fluent with the latest frameworks and tools, but also having an evolved intuition for data analysis, representations & modeling that are efficient, secure, maintainable & explainable, the study methodology has an ideal balance between these crucial components.",
-                  "moreinfo": "https://www.sedc.mk/academy/academy-for-data-science/",
                   "timeline": "Duration: 8 months \nClasses: 252 \n\nStart: October \nEnd: August \n\nLectures will be held twice a week and every 2nd Friday.",
                   "jobopportunities": "You may get employed as the following titles: Data Scientist, Data Analyst, Business Intelligence Analyst, Data Engineer, Data Consultant",
                   "reply": [
@@ -235,7 +227,6 @@
                   "name": "Digital Marketer",
                   "nameId": "digitalMarketer",
                   "overview": "At the end of the program you will develop the essential digital marketing skill set and open up new job opportunities in a large corporation or a small firm, or even go independent as a freelance digital marketer.",
-                  "moreinfo": "https://www.sedc.mk/academy/academy-for-programing/web-developer/",
                   "timeline": "Duration: 6 months \nClasses: 180 \n\nStart: October \nEnd: April \n\nLectures will be held twice a week and every 2nd Friday.",
                   "jobopportunities": "You may get employed as the following titles: Digital Marketer, Performance Marketing Specialist, Digital Advertising Specialist, SEM Specialist, SEO Specialist, Social Media Coordinator, Digital Marketing Analyst, Content Creator",
                   "reply": [
@@ -267,7 +258,6 @@
                   "name": "iThink Basic",
                   "nameId": "basic",
                   "overview": "Teach kids to create, not just to use. Encourage analytical thinking, motivate problem solving, teach that technology makes education enjoyable, interest in continuing development at home, engage children in information technology as a way of everyday life, boost their self-confidence.",
-                  "moreinfo": "https://www.sedc.mk/academy/ithink-academy/",
                   "timeline": "Duration: 8 months \nClasses: 120/130 \n\nStart: October \nEnd: June \n\nLectures will be held twice a week.",
                   "reply": [
                      "This is where our first timers are brought and where the basics are taught!"
@@ -283,7 +273,6 @@
                   "name": "iThink Advanced",
                   "nameId": "advanced",
                   "overview": "Develop ideas through fun and games, focus children on the future use of IT no matter what they will become, create a classroom that can function with student interactions and will foster self-motivated learning.",
-                  "moreInfo": "https://www.sedc.mk/academy/ithink-academy/",
                   "timeline": "Duration: 8 months \nClasses: 120/130 \n\nStart: October \nEnd: June \n\nLectures will be held twice a week.",
                   "reply": [
                      "If your kid and the basics have already danced, then he is ready for a lesson more advanced!"
@@ -299,7 +288,6 @@
                   "name": "iThink Upper",
                   "nameId": "upper",
                   "overview": "Develop ideas through fun and games, focus children on the future use of IT no matter what they will become, create a classroom that can function with student interactions and will foster self-motivated learning, interest in continuing development at home, make them choose a method for solving the problem, boost their self-confidence",
-                  "moreInfo": "https://www.sedc.mk/academy/ithink-academy/",
                   "timeline": "Duration: 8 months \nClasses: 120/130 \n\nStart: October \nEnd: June \n\nLectures will be held twice a week.",
                   "reply": [
                      "If your kid has mastered all our teachings prior, he needs to reach even higher!"
@@ -327,7 +315,6 @@
             ],
             "overview": "Pearson VUE delivers millions of high-stakes tests a year across the globe for clients in the licensure, certification, academic admissions, regulatory, and government testing service markets.",
             "about": "Pearson VUE is a part of Pearson PLC, a $9 billion corporation that is the largest commercial testing company and education publisher in the world. Pearson VUE is headquartered in suburban Minneapolis, Minnesota, with regional offices in the United States, the United Kingdom, Dubai, Australia, India, Japan and China.",
-            "moreinfo": "https://www.sedc.mk/testing/pearson-vue/",
             "testcenters": "Pearson VUE® Authorized Test Centers (PVTC) provide on-site, on-demand testing for certification and select professional licensure exams. All of the centers offer flexibility in choosing what testing model is right for you. Whether you require a dedicated testing room, a classroom used for training, or a mobile unit you would like to use for testing, PVTCs have the solution for you.",
             "infoProperties": [
                "Overview",
@@ -348,7 +335,6 @@
             ],
             "overview": "Prometric is a trusted test development and delivery provider to more than 350 organizations worldwide. On their behalf, Prometric securely deliver an average of 9 million exams per year to people who are seeking to improve their lives.",
             "about": "Prometric is a wholly-owned subsidiary of Educational Testing Service (ETS) and a trusted provider of technology-enabled testing and assessment solutions. Their more than 20 years of experience providing the right test development and test delivery solutions to the world’s most recognized organizations has enabled millions of people around the world to advance in their careers, earn more money or better themselves professionally.",
-            "moreinfo": "https://www.sedc.mk/testing/prometric/",
             "testcenters": "Prometric® Authorized Test Centers (APTC) provide on-site, on-demand testing for certification and select professional licensure exams. All of the centers offer flexibility in choosing what testing model is right for you. Whether you require a dedicated testing room, a classroom used for training, or a mobile unit you would like to use for testing, APTCs have the solution for you.",
             "infoProperties": [
                "Overview",
@@ -369,7 +355,6 @@
             ],
             "overview": "Established in 1997, Certiport is a pioneer in providing complete career-oriented certification solutions to academic institutions and IT Professionals.",
             "about": "Certiport®, a Pearson VUE business, prepares individuals with current and relevant digital skills and credentials for the competitive global workforce.",
-            "moreinfo": "https://www.sedc.mk/testing/certiport/",
             "testcenters": "Certiport delivers certification exams through a specialized, worldwide network of Certiport Authorized Testing Centers. These centers can serve one of three key markets: Academic, Corporate, or Workforce Development. Centers are uniquely positioned to provide the highest level of reliable, performance-based testing.",
             "infoProperties": [
                "Overview",
@@ -389,7 +374,6 @@
                "Great choice! A nice edition to put under your belt! What would you like to know?"
             ],
             "overview": "Kryterion Inc. offers online testing, delivery, and proctoring services. It offers Webassessor, an online testing platform which provides tools for item banking, security, exam management, results management, and self-service reporting. The company was founded in 2000 and is based in Phoenix, Arizona. Kryterion Inc. operates as a subsidiary of Drake International Inc.",
-            "moreinfo": "https://www.sedc.mk/testing/kryterion/",
             "infoProperties": [
                "Overview",
                "Apply"
@@ -406,7 +390,6 @@
                "Great choice! A nice edition to put under your belt! What would you like to know?"
             ],
             "overview": "NEXTEC is one of the largest testing center network in the world. There are over 400 verified Nextec Testing centers in over 300 cities. Nextec Centers administer online and paper-based tests and scale from 5-200 seating capacity.",
-            "moreinfo": "https://www.sedc.mk/testing/nextec/",
             "infoProperties": [
                "Overview",
                "Apply"
@@ -424,7 +407,6 @@
             ],
             "overview": "International Council of E-Commerce Consultants, also known as EC-Council, is the world’s largest cyber security technical certification body.",
             "about": "EC-Council certification programs are recognized worldwide and have received endorsements from various government agencies including the US Federal Government via the Montgomery GI Bill, and the US Government National Security Agency (NSA).",
-            "moreinfo": "https://www.sedc.mk/testing/ec-council/",
             "testcenters": "EC-Council has certified over 200,000 security professionals. Individuals who have achieved EC-Council certifications include those from some of the finest organizations around the world such as the US Army, the FBI, Microsoft, IBM, and the United Nations.",
             "infoProperties": [
                "Overview",
@@ -449,7 +431,6 @@
                   "name": "Agile Basics",
                   "nameId": "agileBasics",
                   "overview": "Agile is an attempt to make the process of software development better and more effective, and it’s seen increasing popularity and success.",
-                  "moreinfo": "https://courses.sedc.mk/product/agile-basics/",
                   "timeline": "Classes: 15 \n\nStart Date: 19.04.2021 \nEnd Date: 23.04.2021 \n\nTime: 16:30 - 19 45 Every Day (Monday-Friday)",
                   "targetaudience": "Anyone interested in AGILE framework.",
                   "reply": [
@@ -469,7 +450,6 @@
                   "name": "Agile SCRUM Master Training",
                   "nameId": "agileScrumMasterTraining",
                   "overview": "This 4 days course will teach you how to employ Scrum to increase value, improve productivity and optimize the total cost of ownership of software products and also will give you basis to become certified Scrum Master.",
-                  "moreinfo": "https://courses.sedc.mk/product/agile-scrum-master-training/",
                   "timeline": "Classes: 20 \n\nStart Date: 15.03.2021 \nEnd Date: 19.03.2021 \n\nTime: 16:30 - 19:45 Every Day (Monday-Friday)",
                   "targetaudience": "Anyone interested in AGILE framework, future SCRUM Masters, Product Owners or SCRUM team members",
                   "reply": [
@@ -489,7 +469,6 @@
                   "name": "Business Analysis",
                   "nameId": "businessAnalysis",
                   "overview": "Interacting with and gathering requirements from front office users (trading, sales, desk heads, etc.) with relevant Business domain knowledge. Translating these business requirements into clear specify-by-example requirements for IT with Business Domain Knowledge in it.",
-                  "moreinfo": "https://courses.sedc.mk/product/business-analysis-online/",
                   "timeline": "Classes: 20 \n\nStart Date: 10.05.2021 \nEnd Date: 13.05.2021 \n\nTime: 16:45 - 20:45 Every Day (Monday-Thursday)",
                   "targetaudience": "Business employees engaged in forming requirements for software development.",
                   "reply": [
@@ -509,7 +488,6 @@
                   "name": "Microsoft Office",
                   "nameId": "microsoftOffice",
                   "overview": "This course will provide a solid foundation in Microsoft Word, PowerPoint, Excel and Outlook, where beginners would have the opportunity to learn the basic skills for these programs.",
-                  "moreinfo": "https://courses.sedc.mk/product/289/",
                   "timeline": "Classes: 30 \n\nStart Date: 05.04.2021 \nEnd Date: 28.04.2021 \n\nTime: 17:30 - 20:00 Monday, Wednesday & every second Friday",
                   "targetaudience": "This course is designed for those who wish to acquire skills using Microsoft Office applications. This Qualification is helpful for any Office job, such as Admin Assistant, Administrator, or Office Manager.",
                   "reply": [
@@ -529,7 +507,6 @@
                   "name": "MS Excel Advanced",
                   "nameId": "msExcelAdvanced",
                   "overview": "This course is designed for the participants who want to perform accurate and rapid calculations with results ranging from simple calculation to complex financial analyses.",
-                  "moreinfo": "https://courses.sedc.mk/product/ms-excel-advanced/",
                   "timeline": "Classes: 27 \n\nStart Date: 02.03.2021 \nEnd Date: 30.03.2021 \n\nTime: 17:30 - 19:30 Tuesday & Thursday",
                   "targetaudience": "Anyone interested in expanding their knowledge in working with tables and analyzing data.",
                   "reply": [
@@ -549,7 +526,6 @@
                   "name": "PMP Project Management Professional",
                   "nameId": "pmpProjectManagementProfessional",
                   "overview": "This course provides Project Managers with the knowledge and skills needed to master the PMBOK® Guide Fifth Edition and attain the Project Management Professional (PMP®) certification.",
-                  "moreinfo": "https://courses.sedc.mk/product/pmp-project-management-professional/",
                   "timeline": "Classes: 35 \n\nStart Date: 10.05.2021 \nEnd Date: 18.05.2021 \n\nTime: 16:45 - 20:45 (Monday-Friday)",
                   "targetaudience": "This course is intended to enhance a student’s project experience with global terminology and the proven framework for leading and directing project teams and in delivering project results within the constraints of schedule, budget and resources.",
                   "reply": [
@@ -581,7 +557,6 @@
                   "name": "CCNA",
                   "nameId": "ccna",
                   "overview": "CCNA Routing and Switching teaches comprehensive networking concepts, from network applications to the protocols and services provided to those applications by the lower layers of the network.",
-                  "moreinfo": "https://courses.sedc.mk/product/ccna/",
                   "timeline": "Classes: 180 \n\nStart Date: 28.04.2021 \nEnd Date: 25.08.2021 \n\nTime: 17:30 -20:45 Monday, Wednesday & every second Friday",
                   "targetaudience": "The course is appropriate for students at many education levels College and university students studying IT fields would find this curriculum to be essential in introduction to IT and networking.",
                   "reply": [
@@ -601,7 +576,6 @@
                   "name": "Certified Ethical Hacker - CEH",
                   "nameId": "certifiedethicalhacker-CEH",
                   "overview": "The Certified Ethical Hacker (CEH) program is the most comprehensive ethical hacking course  to help information security professionals grasp the fundamentals of ethical hacking.",
-                  "moreinfo": "https://courses.sedc.mk/product/certified-ethical-hacker-ceh/",
                   "timeline": "Classes: 40 \n\nStart Date: 16.03.2021 \nEnd Date: 15.04.2021 \n\nTime: 17:30 – 20:45 Tuesday & Thursday",
                   "targetaudience": "The Certified Ethical Hacker certification will fortify the application knowledge of security officers, auditors, security professionals, site administrators, and anyone who is concerned about the integrity of the network infrastructure.",
                   "reply": [
@@ -621,7 +595,6 @@
                   "name": "Certified Incident Handler - E-CIH",
                   "nameId": "certifiedIncidentHandler-E-CIH",
                   "overview": "Certified Incident Handler (E|CIH) is a comprehensive specialist-level program that imparts knowledge and skills that organizations need to effectively handle post breach consequences by reducing the impact of the incident, from both a financial and a reputational perspective.",
-                  "moreinfo": "https://courses.sedc.mk/product/certified-incident-handler-e-cih/",
                   "timeline": "Classes: 24 \n\nStart Date: 04.05.2021 \nEnd Date: 20.05.2021 \n\nTime: 17:30 – 20:45 Tuesday & Thursday",
                   "targetaudience": "The incident handling skills taught in E|CIH are complementary to the job roles below as well as many other cybersecurity jobs.",
                   "reply": [
@@ -641,7 +614,6 @@
                   "name": "Introduction of programming with Python",
                   "nameId": "introductionOfProgrammingWithPython",
                   "overview": "This Python Programming course is a beginner’s course. You will learn to code using Python.",
-                  "moreinfo": "https://courses.sedc.mk/product/introduction-of-programming-with-python/",
                   "timeline": "Classes: 24+ \n\nStart Date: 09.02.2021 \nEnd Date: 04.03.2021 \n\nTime: 17:30 – 20:00 Monday, Wednesday & every second Friday",
                   "targetaudience": "Programming enthusiasts, Business Employees (Finance, Legal, Marketing), Workers in need of Reskilling.",
                   "reply": [
@@ -661,7 +633,6 @@
                   "name": "IT Essentials",
                   "nameId": "itEssentials",
                   "overview": "IT Essentials V7.0 curriculum provides an introduction to the computer hardware and software skills needed to help meet the growing demand for entry-level ICT professionals.",
-                  "moreinfo": "https://courses.sedc.mk/product/it-essentials/",
                   "timeline": "Classes: 96 \n\nStart Date: 24.05.2021 \nEnd Date: 27.07.2021 \n\nTime: 17:30 – 20:45 Monday,Wednesday & every second Friday",
                   "targetaudience": "The Cisco IT Essentials curriculum is designed for Cisco Networking Academy students in upper secondary schools, technical schools, and colleges or universities who want to pursue careers in IT and learn how computers work, how to assemble computers, and how to troubleshoot hardware and software issues.",
                   "reply": [
@@ -693,7 +664,6 @@
                   "name": "Digital Advertising",
                   "nameId": "digitalAdvertising",
                   "overview": "Implementing marketing campaigns, analytics reports, building & maintaining an online presence, etc.",
-                  "moreinfo": "https://courses.sedc.mk/product/digital-advertising/",
                   "timeline": "Classes: 47 \n\nStart date: 23.02.2021 \nEnd date: 15.04.2021 \n\nTime: 17:30 – 20:00 Tuesday & Thursday",
                   "targetaudience": "You may get employed as the following titles: Web Developer, Software Developer, Front-End Web Developer, Full-Stack Web Developer, Technical trainer, Technical consultant",
                   "reply": [
@@ -713,7 +683,6 @@
                   "name": "Search Engine Optimization (SEO)",
                   "nameId": "searchEngineOptimization",
                   "overview": " This course will help you develop proficiency in maximization of website traffic through on-page & off-page search engine optimization, implementation of keyword research strategies & maintenance of performance reports.",
-                  "moreinfo": "https://courses.sedc.mk/product/search-engine-optimization-seo/",
                   "timeline": "Classes: 40-44 \n\nStart date: 17.08.2021 \nEnd date: 23.09.2021 \n\nTime: 17:30 – 20:00 Tuesday & Thursday",
                   "targetaudience": "Marketing and Digital Marketing professionals who want to improve SEO skillset Entrepreneurs, self-employed, business owners, and other people interested in converting a new profession and changing careers (can be extended)",
                   "reply": [
@@ -745,7 +714,6 @@
                   "name": "Adobe Illustrator CC 2019",
                   "nameId": "adobeIllustratorCc2019",
                   "overview": "Illustrator is a vector drawing program. It is often used to draw illustrations, cartoons, diagrams, charts and logos.",
-                  "moreinfo": "https://courses.sedc.mk/product/adobe-illustrator-cc-2019/",
                   "timeline": "Classes: 30 \n\nStart Date: 22.06.2021 \nEnd Date: 22.07.2021 \n\nTime: 17:00 -19:30 Tuesday & Thursday",
                   "targetaudience": "Anyone interested in expanding their knowledge in using this ADOBE tool.",
                   "reply": [
@@ -765,7 +733,6 @@
                   "name": "Adobe Photoshop CC 2019",
                   "nameId": "adobePhotoshopCc2019",
                   "overview": "This class will give you a solid core to understanding the basics of using Adobe Photoshop and how to edit photos.",
-                  "moreinfo": "https://courses.sedc.mk/product/adobe-photoshop-cc-2019/",
                   "timeline": "Classes: 30 \n\nStart Date: 18.05.2021 \nEnd Date: 17.06.2021 \n\nTime: 17:00 -19:30 Tuesday & Thursday",
                   "targetaudience": "Anyone interested in expanding their knowledge in using this ADOBE tool.",
                   "reply": [
@@ -785,7 +752,6 @@
                   "name": "Level up your graphic design skills",
                   "nameId": "levelUpYourGraphicDesignSkills",
                   "overview": "This class will give you a solid core to understanding the basics of using Adobe Photoshop, InDesign and Illustrator.",
-                  "moreinfo": "https://courses.sedc.mk/product/up-your-graphic-design-skills/",
                   "timeline": "Classes: 90 \n\nStart Date: 18.05.2021 \nEnd Date: 26.08.2021 \n\nTime: 17:00 -19:30 Tuesday & Thursday",
                   "targetaudience": "Anyone interested in expanding their knowledge in using these ADOBE tools.",
                   "reply": [
@@ -805,7 +771,6 @@
                   "name": "UI/UX Design",
                   "nameId": "uI/UxDesign",
                   "overview": "This hands-on, projects based course, explores the principles and practice of user interface and user experience design for digital platforms.",
-                  "moreinfo": "https://courses.sedc.mk/product/ui-ux-design/",
                   "timeline": "Classes: 66 \n\nStart Date: 18.05.2021 \nEnd Date: 09.07.2021 \n\nTime: Monday, Tuesday and every 2nd Friday",
                   "targetaudience": "Everyone who is familiar with graphic design tools , or any other design software.",
                   "reply": [
@@ -977,7 +942,6 @@
       },
       "ShortTalk": {
          "Hello": {
-            "keywords": [],
             "reply": [
                "Well hi there, how can I help you?",
                "Hello friend, how may I assist you?",
@@ -988,7 +952,6 @@
             ]
          },
          "Goodbye": {
-            "keywords": [],
             "reply": [
                "It was a pleasure helping you! Bye for now!",
                "Well I hope I was of some help! See you later alligator!",
@@ -1005,7 +968,6 @@
             "Awesome choice! Which part are you interested in?"
          ],
          "HowAreYou": {
-            "keywords": [],
             "reply": [
                "I'm doing great! Thanks for asking!",
                "I always feel good! It's just the way I'm programmed!",
@@ -1014,7 +976,6 @@
             ]
          },
          "Funny": {
-            "keywords": [],
             "reply": [
                "I'm the funniest bot you'll ever meet! Accept for R2D2... I love that little bot!",
                "I'm as funny as the people who made me! Hm... That doesn't amount to much now does it... Oh well!",
@@ -1022,19 +983,16 @@
             ]
          },
          "WhoAreYou": {
-            "keywords": [],
             "reply": [
                "I'm a chat bot made by the very students of SEDC and I'm here to help navigate you through this wonderful website!"
             ]
          },
          "WhatCanYouDo": {
-            "keywords": [],
             "reply": [
                "I can help you by providing you with information about our academies and courses! You can also play a variety of games and take some quizzes if you feel brave enough!"
             ]
          },
          "NoComprende": {
-            "keywords": [],
             "reply": [
                "I'm sorry but I don't understand you... Can you ask me a more basic question?\n\n If you would like to talk to someone who isn't a bot, you can click on the button below and you can send our sales department an email so that they can contact you as soon as possible!",
                "Well I know I'm smart... But not that smart! Try asking me something easier!\n\n If you would like to talk to someone who isn't a bot, you can click on the button below and you can send our sales department an email so that they can contact you as soon as possible!",

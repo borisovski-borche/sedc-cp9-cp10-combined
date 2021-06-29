@@ -35,6 +35,10 @@ const GamesService = {
     startGame: function (url) {
         UiService.displayModalWindow("games");
 
-        ApplyAndPriceService.popUp.innerHTML = `<iframe src= ${url} scrolling="no" seamless="seamless" marginheight="0" marginwidth="0" frameBorder="0" width="100%" height="230%" ></iframe>`;
+        // ApplyAndPriceService.popUp.innerHTML = `<iframe src= ${url} scrolling="no" seamless="seamless" marginheight="0" marginwidth="0" frameBorder="0" width="100%" height="230%" ></iframe>`;
+
+        ApplyAndPriceService.popUp.innerHTML = `<div class= "iframeContainer"><iframe class= "responsiveIframe" src= ${url}></iframe></div>`;
+
+        // ApplyAndPriceService.popUp.innerHTML = `<iframe src= ${url} onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:200px;width:100%;border:none;overflow:hidden;"></iframe>`;
     }
 };//PROPERTIES: Bool if the games are opened

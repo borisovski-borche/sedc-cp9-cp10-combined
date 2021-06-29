@@ -139,19 +139,26 @@ const UiService = {
     changeQuizzesGamesIconAndFunctionality: function (gameOrQuizFlag, item, viewPort) {
         if (gameOrQuizFlag) {
             item.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/chatButton.svg" height="20rem">`;
+            item.title = "Chat";
             if (item.id === "chatQuizzes") {
                 GamesService.areGamesOpen = false;
                 AnimationsService.chatGames.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/games.svg" height="25rem">`;
+                AnimationsService.chatGames.title = "Games";
+                item.title = "Chat";
             } else {
                 QuizzesService.areQuizzesOpen = false;
                 AnimationsService.chatQuizzes.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/quizzes.svg" height="25rem">`;
+                AnimationsService.chatQuizzes.title = "Quizzes";
+                item.title = "Chat";
             }
             this.toggleDisplayView(AnimationsService.chatWindow, viewPort);
         } else {
             if (item.id === "chatQuizzes") {
                 item.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/quizzes.svg" height="25rem">`;
+                item.title = "Quizzes";
             } else {
                 item.innerHTML = `<img src="./DigitalCommunicator/src/img-avatars/games.svg" height="25rem">`;
+                item.title = "Games";
             };
             this.toggleDisplayView(viewPort, AnimationsService.chatWindow);
         };
@@ -200,31 +207,17 @@ const UiService = {
             return;
         }
 
-        this.modalContent.style.height = "70%";
-        this.modalContent.style.width = "40%";
-        this.modalContent.style.paddingBottom = "2%";
         QuizzesService.form.style.display = "none";
         QuizzesService.popUpQuizzes.style.display = "none";
         ApplyAndPriceService.popUp.style.display = "block";
         ApplyAndPriceService.popUp.style.overflowY = "hidden";
-        ApplyAndPriceService.popUp.style.paddingBottom = "0%";
-        ApplyAndPriceService.closeModalButton.style.marginTop = "-6%";
 
         switch (flag) {
-            case "price":
-            case "apply":
-                ApplyAndPriceService.popUp.style.paddingBottom = "5%";
-                break;
             case "games":
-                this.modalContent.style.height = "80%";
-                this.modalContent.style.width = "90%";
                 ApplyAndPriceService.popUp.style.overflowY = "auto";
-                this.modalContent.style.paddingBottom = "7%";
-                ApplyAndPriceService.closeModalButton.style.marginTop = "-2.5%";
                 break;
             case "quizzes":
                 ApplyAndPriceService.popUp.style.display = "none";
-                this.modalContent.style.width = "45%";
                 QuizzesService.popUpQuizzes.style.display = "block";
                 QuizzesService.form.style.display = "block";
                 QuizzesService.form.scrollIntoView({ block: 'start', behavior: 'smooth' });
@@ -252,8 +245,8 @@ const UiService = {
             .then(res => res.json())
             .then(data => {
                 let academy;
-                for(let element of data.academies){
-                    if(element.title.includes(academyName)){
+                for (let element of data.academies) {
+                    if (element.title.includes(academyName)) {
                         academy = element;
                     }
                 }
@@ -264,6 +257,6 @@ const UiService = {
 
                 ButtonsService.getMainButtons(DataService.cachedData);
                 chatMinimize.click();
-        });
+            });
     }
 };//PROPERTIES: Chat history div, Recommended slide div, Modal pop up wrapper div
