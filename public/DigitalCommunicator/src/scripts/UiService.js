@@ -84,15 +84,15 @@ const UiService = {
     },
 
     //Prints the INFO for the Testing object
-    printTestingInfo: function (neededInfo, elementId) {
+    printTestingInfo: function (neededInfo, elementId, inputString) {
         for (const test of DataService.cachedData.Testing) {
             if (test.nameId === elementId) {
                 if (test[neededInfo.toLowerCase().replace(/\s/g, "")] !== undefined) {
-                    this.replyInfoMessage(neededInfo, test[neededInfo.toLowerCase().replace(/\s/g, "")]);
+                    this.replyInfoMessage(inputString === undefined ? neededInfo : inputString, test[neededInfo.toLowerCase().replace(/\s/g, "")]);
                     UiService.sleep().then(() => { ButtonsService.isConversationDoneButtons(); });
                     break;
                 } else if (neededInfo === "Apply") {
-                    UiService.replyInfoMessage(neededInfo, ["Thank you for your interest!"]);
+                    UiService.replyInfoMessage(inputString === undefined ? neededInfo : inputString, ["Thank you for your interest!"]);
                     ApplyAndPriceService.getApplyForm("Testing");
                     UiService.sleep().then(() => { ButtonsService.isConversationDoneButtons(); });
                     break;

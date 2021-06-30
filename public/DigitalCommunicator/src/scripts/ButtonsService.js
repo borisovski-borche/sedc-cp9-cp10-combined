@@ -125,7 +125,7 @@ const ButtonsService = {
   },
 
   //Prints the buttons for Testing Object info
-  getInfoTestingButtons: function (element) {
+  getInfoTestingButtons: function (element, stringInput) {
     this.buttonsDiv.innerHTML = "";
 
     for (const test of DataService.cachedData.Testing) {
@@ -134,7 +134,7 @@ const ButtonsService = {
       }
     }
 
-    UiService.replyMessages(element.name, element.reply);
+    UiService.replyMessages(stringInput === undefined ? element.name : stringInput, element.reply);
 
     for (const button of element.infoProperties) {
       UiService.sleep().then(() => {

@@ -51,9 +51,9 @@ const SearchInputService = {
                 UiService.printAcademyInfo(SearchInputService.searchThroughInfoProperties(foundHigh[0].item.infoProperties)[0], foundHigh[0].item.nameId, foundHigh[0].branch, SearchInputService.inputStringForUser);
             } else if(foundHigh[0].branch === 'Testing'){
                 if(SearchInputService.searchThroughInfoProperties(foundHigh[0].item.infoProperties).length === 1){
-                    UiService.printTestingInfo(SearchInputService.searchThroughInfoProperties(foundHigh[0].item.infoProperties)[0], foundHigh[0].item.nameId)
+                    UiService.printTestingInfo(SearchInputService.searchThroughInfoProperties(foundHigh[0].item.infoProperties)[0], foundHigh[0].item.nameId, SearchInputService.inputStringForUser);
                 }else{
-                    ButtonsService.getInfoTestingButtons(foundHigh[0].item);
+                    ButtonsService.getInfoTestingButtons(foundHigh[0].item, SearchInputService.inputStringForUser);
                 }
             }
             else {
