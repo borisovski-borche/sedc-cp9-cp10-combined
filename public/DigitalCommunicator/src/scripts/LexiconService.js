@@ -82,15 +82,15 @@ const LexiconService = {
         )
             keywordModifiedString += "Computer Networks";
 
-        // Checks whether input string has a reference to "Design" and if so adds the corresponding keyword to the modified input string
+        // Checks whether input string has a reference to "Design Academy" and if so adds the corresponding keyword to the modified input string
         if (
-            inputString.toLowerCase().includes("design") ||
+            // inputString.toLowerCase().includes("design") ||
             inputString.toLowerCase().includes("graphic") ||
             inputString.toLowerCase().includes("ui") ||
             inputString.toLowerCase().includes("ux") ||
             inputString.toLowerCase().includes("game")
         )
-            keywordModifiedString += "Design";
+            keywordModifiedString += "Design Academy";
 
         // Checks whether input string has a reference to "Software Testing" and if so adds the corresponding keyword to the modified input string
         if (
@@ -152,7 +152,7 @@ const LexiconService = {
 
         // Checks whether input string has a reference to "Design Courses" and if so adds the corresponding keyword to the modified input string
         if (
-            inputString.toLowerCase().includes("design") ||
+            // inputString.toLowerCase().includes("design") ||
             inputString.toLowerCase().includes("adobe") ||
             inputString.toLowerCase().includes("illustrator") ||
             inputString.toLowerCase().includes("photoshop") ||
@@ -162,6 +162,16 @@ const LexiconService = {
         )
             keywordModifiedString += "Design Courses";
 
-            return keywordModifiedString;
+        // Checks whether input string has a reference to "Design Courses" and "Design Academies" as parents
+        if (
+            inputString.toLowerCase().includes("design") &&
+            !inputString.toLowerCase().includes("design courses") &&
+            !inputString.toLowerCase().includes("design academy")
+        ) {
+            keywordModifiedString += "Design Courses";
+            keywordModifiedString += "Design Academy";
+        }
+
+        return keywordModifiedString;
     }
 }
