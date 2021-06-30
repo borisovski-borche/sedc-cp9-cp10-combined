@@ -36,7 +36,6 @@ const SearchInputService = {
 
         SearchInputService.inputString = LexiconService.checkForKeywords(SearchInputService.inputStringForUser);
         input.value = "";
-        console.log(SearchInputService.inputString);
 
         //Searches for a curse word and promotes looove
         if (SearchInputService.searchForCurseWords() !== undefined) {
@@ -48,9 +47,16 @@ const SearchInputService = {
         //Looks for study program
         let foundHigh = SearchInputService.searchThroughHighTier();
         if (foundHigh.length === 1) {
-            if (SearchInputService.searchThroughInfoProperties(foundHigh[0].item.infoProperties).length === 1) {
+            if (SearchInputService.searchThroughInfoProperties(foundHigh[0].item.infoProperties).length === 1 && foundHigh[0].branch !== 'Testing') {
                 UiService.printAcademyInfo(SearchInputService.searchThroughInfoProperties(foundHigh[0].item.infoProperties)[0], foundHigh[0].item.nameId, foundHigh[0].branch, SearchInputService.inputStringForUser);
-            } else {
+            } else if(foundHigh[0].branch === 'Testing'){
+                if(SearchInputService.searchThroughInfoProperties(foundHigh[0].item.infoProperties).length === 1){
+                    UiService.printTestingInfo(SearchInputService.searchThroughInfoProperties(foundHigh[0].item.infoProperties)[0], foundHigh[0].item.nameId)
+                }else{
+                    ButtonsService.getInfoTestingButtons(foundHigh[0].item);
+                }
+            }
+            else {
                 UiService.replyMessages(SearchInputService.inputStringForUser, foundHigh[0].item.reply);
                 UiService.sleep().then(() => { ButtonsService.getInfoButtons(foundHigh[0].item, foundHigh[0].branch); });
             }
@@ -192,11 +198,11 @@ const SearchInputService = {
     //Looks for info property of the study program
     searchThroughInfoProperties: function (elementProperties) {
         let foundItems = [];
-        let properties = elementProperties;
-        if (!properties) {
-            properties = ["Price", "Overview", "Timeline", "Job Opportunities", "Apply", "About", "Test Centers", "Target Audience"];
+        if (elementProperties === undefined) {
+            elementProperties = ["Price", "Overview", "Timeline", "Job Opportunities", "Apply", "About", "Test Centers", "Target Audience"];
         }
-        for (let property of properties) {
+
+        for (let property of elementProperties) {
             if (SearchInputService.inputString.toLowerCase().includes(property.toLowerCase())) {
                 foundItems.push(property);
             }

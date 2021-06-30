@@ -84,6 +84,7 @@ window.addEventListener("resize", () => {
 
     if (window.innerWidth < 821) {
         UiService.toggleDisplayView(QuizzesService.gamesAndQuizzesWindow, AnimationsService.chatWindow);
+        ApplyAndPriceService.closeModalButton.click();
     }
 
     if (window.innerWidth < 821) {

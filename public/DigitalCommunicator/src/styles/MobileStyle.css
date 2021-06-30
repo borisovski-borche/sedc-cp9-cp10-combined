@@ -15,7 +15,8 @@
     --typing-animation-dot-color2: #002c5f;
     --typing-animation-dot-color3: #002c5f8f;
     --typing-animation-dot-color4: #002c5f;
-    --modal-bckg-white: #ebebeb;
+    --modal-bckg-white: #ffffff;
+    --modal-form-games-border-gray: #ccc;
     --chat-maximize-border-purple: #7f60a9;
     --aricoma-gold: #A98E5B;
 }
@@ -600,7 +601,7 @@ button:active {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     padding-top: 0;
     left: 0;
     top: 0;
