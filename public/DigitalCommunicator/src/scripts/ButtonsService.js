@@ -35,10 +35,7 @@ const ButtonsService = {
         break;
       case "Academies":
         UiService.sleep().then(() => {
-          ButtonsService.getButtons(
-            DataService.cachedData.Academies,
-            "Academies"
-          );
+          ButtonsService.getButtons(DataService.cachedData.Academies,"Academies");
         });
         break;
       case "Courses":
@@ -206,4 +203,12 @@ const ButtonsService = {
       }
     }
   },
+
+  createMoreOptionsButtons: function(element, branch){
+    if(branch === "Testing"){
+      return `<button id="${element.nameId}" class="chatBotBtns" onclick="ButtonsService.getInfoTestingButtons('${element.nameId}')">${element.name}</button>`;
+    }else{
+      return `<button id="${element.nameId}" class="chatBotBtns" onclick="ButtonsService.getDataButtons('${element.nameId}', '${branch}')">${element.name}</button>`;
+    }
+  }
 }; //PROPERTIES: The buttons div, The main buttons div, Minimize button, Maximize button
