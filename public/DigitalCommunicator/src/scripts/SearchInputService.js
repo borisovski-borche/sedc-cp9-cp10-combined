@@ -251,6 +251,8 @@ const SearchInputService = {
             return funny;
         } else if (SearchInputService.inputString.toLowerCase().includes("you're") && SearchInputService.inputString.toLowerCase().includes("funny")) {
             return funny;
+        } else if (SearchInputService.inputString.toLowerCase().includes("that") && SearchInputService.inputString.toLowerCase().includes("funny")) {
+            return funny;
         }
     },
 
