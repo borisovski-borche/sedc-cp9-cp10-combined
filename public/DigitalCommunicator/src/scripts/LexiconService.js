@@ -110,13 +110,19 @@ const LexiconService = {
             inputString.toLowerCase().includes("advert") ||
             inputString.toLowerCase().includes("seo") ||
             inputString.toLowerCase().includes("search engine")
-        )
-            keywordModifiedString += "Digital Marketing";
+        ) {
+            if (!inputString.toLowerCase().includes("digital marketing academy") &&
+                !inputString.toLowerCase().includes("digital marketing courses") &&
+                !inputString.toLowerCase().includes("digital marketing course")) {
+                keywordModifiedString += "Digital Marketing Academy";
+                keywordModifiedString += "Digital Marketing Courses";
+            }
+        }
 
         // Checks whether input string has a reference to "iThink Academy" and if so adds the corresponding keyword to the modified input string
         if (
-            inputString.toLowerCase().includes("iThink") ||
-            inputString.toLowerCase().includes("i Think") ||
+            inputString.toLowerCase().includes("ithink") ||
+            inputString.toLowerCase().includes("i think") ||
             inputString.toLowerCase().includes("child") ||
             inputString.toLowerCase().includes("kid") ||
             inputString.toLowerCase().includes("ithink")
@@ -142,7 +148,7 @@ const LexiconService = {
         // Checks whether input string has a reference to "HI-Tech" and if so adds the corresponding keyword to the modified input string
         if (
             inputString.toLowerCase().includes("hack") ||
-            inputString.toLowerCase().includes("it") ||
+            inputString.includes("IT") ||
             inputString.toLowerCase().includes("python") ||
             inputString.toLowerCase().includes("ccna") ||
             inputString.toLowerCase().includes("incident") ||

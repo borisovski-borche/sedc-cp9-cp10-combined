@@ -1,4 +1,5 @@
 /* VARIABLES */
+
 :root {
     --dark-blue: #002c5f;
     --light-blue: #e9effe;
@@ -20,6 +21,7 @@
 }
 
 /* STYLES FOR THE CHAT WINDOW */
+
 .main-window {
     transition: all 1s ease-out;
     visibility: visible;
@@ -124,9 +126,9 @@
     bottom: 17%;
     box-shadow: 0.188rem 0.188rem 1rem rgb(180, 180, 180);
     display: none;
-  }
+}
 
-  .speechBox:before {
+.speechBox:before {
     background-color: #ececec;
     content: "\00a0";
     height: 16px;
@@ -140,7 +142,7 @@
     -webkit-transform: rotate( 29deg) skew( -20deg);
     width: 20px;
     box-shadow: 0.28rem 0.05rem 1rem -1rem rgb(180, 180, 180);
-  }
+}
 
 .chat-window {
     width: 100%;
@@ -332,54 +334,35 @@
     padding-top: 5%;
 }
 
-.Academies {
+.mainButtonsStyle {
+    font-size: 15px;
     width: 7.5rem;
     height: 3.125rem;
     border-radius: 0.625rem;
     border: none;
-    border-top: 0.313rem solid var(--btn-brown-red);
     box-shadow: 0.188rem 0.188rem 0.313rem var(--shadow);
     background-color: var(--white);
-    color: var(--btn-brown-red);
     margin: 0.313rem;
+}
+
+.Academies {
+    border-top: 0.313rem solid var(--btn-brown-red);
+    color: var(--btn-brown-red);
 }
 
 .Testing {
-    width: 7.5rem;
-    height: 3.125rem;
-    border-radius: 0.625rem;
-    border: none;
     border-top: 0.313rem solid var(--btn-purple);
-    box-shadow: 0.188rem 0.188rem 0.313rem var(--shadow);
-    background-color: var(--white);
     color: var(--btn-purple);
-    margin: 0.313rem;
 }
 
 .Courses {
-    width: 7.5rem;
-    height: 3.125rem;
-    border-radius: 0.625rem;
-    border: none;
     border-top: 0.313rem solid var(--btn-green);
-    box-shadow: 0.188rem 0.188rem 0.313rem var(--shadow);
-    background-color: var(--white);
     color: var(--btn-green);
-    margin: 0.313rem;
 }
 
-/* Contact Us style button */
-
 .contactUs {
-    width: 7.5rem;
-    height: 3.125rem;
-    border-radius: 0.625rem;
-    border: none;
     border-top: 0.313rem solid var(--btn-pink);
-    box-shadow: 0.188rem 0.188rem 0.313rem var(--shadow);
-    background-color: var(--white);
     color: var(--btn-pink);
-    margin: 0.313rem;
 }
 
 .chat-buttons-div {
@@ -390,6 +373,7 @@
 }
 
 .chatBotBtns {
+    font-size: 14px;
     display: inline-block;
     height: 2.5rem;
     padding: 2%;
@@ -528,6 +512,7 @@ button:active {
 /* STYLES FOR MESSAGES */
 
 .chatBubblesUser {
+    font-size: 14px;
     margin: 0rem 0.938rem 0.625rem 3.125rem;
     padding: 0.938rem;
     float: right;
@@ -548,6 +533,7 @@ button:active {
 }
 
 .chatBubblesBot {
+    font-size: 14px;
     margin: 0.313rem 3.125rem 0rem 0.938rem;
     padding: 0.938rem;
     float: left;
