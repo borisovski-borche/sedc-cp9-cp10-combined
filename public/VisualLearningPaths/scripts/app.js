@@ -1,33 +1,17 @@
-const headerBurgerBtn = document.querySelector(".header__btn");
-
-const navListBurger = document.querySelector(".nav__list-burger");
-
-const aboutBtn = document.querySelector(".aboutBtn");
-
-const paymentBtn = document.querySelector(".paymentBtn");
-
-const contactBtn = document.querySelector(".contactBtn");
-
 //creating the different dynamic pages funcitons
 
 let urlId = "";
 
 window.addEventListener("load", e => {
   urlId = e.currentTarget.location.href.replace("http://localhost:3000/", "");
-
-  if (urlId.startsWith("academy")) {
-    showPageByClass("academy");
-  }
 });
 
 const urlIdHandler = (data, id) => {
   const pageIds = ["about-us", "contact", "tuition-fees"];
-
   const academyIds = data.map(academy => academy.id);
-
   const allIds = [...pageIds, ...academyIds];
 
-  if (!id) {
+  if (!id || id === "index.html") {
     showPageByClass("landing");
     return;
   }
@@ -40,6 +24,7 @@ const urlIdHandler = (data, id) => {
   if (id.startsWith("academy")) {
     createAcademyPage(data, id);
     showPageByClass("academy");
+    asideItemSelectedHandler(id);
     return;
   }
 
@@ -78,66 +63,25 @@ const createModalWindow = (id, data) => {
   document.body.style.overflow = "hidden";
 };
 
-//Event Handler functions
-
-const cardButtonsHandler = (buttonElements, data) => {
-  buttonElements.forEach(button => {
-    button.addEventListener("click", e => {
-      e.preventDefault();
-      createModalWindow(e.target.id, data);
-    });
-  });
+const createAsideMenu = academiesData => {
+  const asideEl = document.querySelector(".aside");
+  asideEl.innerHTML = renderAsideMenu(academiesData);
+  const asideLinks = document.querySelectorAll(".aside__item-link");
+  asideLinksHandler(asideLinks, academiesData);
 };
 
-const categoryCardLinksHandler = (linkElements, data) => {
-  linkElements.forEach(link => {
-    link.addEventListener("click", e => {
-      e.preventDefault();
-
-      const academyId = e.target.id.slice(6);
-
-      createAcademyPage(data, academyId);
-
-      window.history.pushState({ academyId }, "", `/${academyId}`);
-
-      showPageByClass("academy");
-    });
-  });
-};
-
-const headerLogoHandler = () => {
-  const headerLogo = document.querySelector(".header__logo");
-
-  headerLogo.addEventListener("click", () => {
-    showPageByClass("landing");
-    window.history.pushState("", "", "/");
-  });
-};
-
-const modalCloseHandler = () => {
-  const modalOuter = document.querySelector(".modal__outer");
-
-  modalOuter.addEventListener("click", e => {
-    if (
-      e.target.classList.contains("modal__outer") ||
-      e.target.classList.contains("modal__close-btn") ||
-      e.target.classList.contains("modal__bottom-link")
-    ) {
-      document.body.style.overflow = "auto";
-      document
-        .querySelector(".modal__inner")
-        .classList.remove("modal__inner--show");
-      document
-        .querySelector(".modal__outer")
-        .classList.remove("modal__outer--open");
-    }
-  });
+const createHeaderSubMenu = academiesData => {
+  const subMenu = document.querySelector(".nav__item-submenu");
+  subMenu.innerHTML = renderSubMenuLinks(academiesData);
+  const subMenuLinks = document.querySelectorAll(".nav__submenu-item");
+  subMenuLinksHandler(subMenuLinks, academiesData);
 };
 
 showPageByClass("landing");
 modalCloseHandler();
 headerLogoHandler();
-
+navLinksHandler();
+footerAboutUs();
 //dynamic routing function
 
 const routingHandler = data => {
@@ -150,7 +94,7 @@ const routingHandler = data => {
       showPageByClass(e.state.pageId);
     }
 
-    if (e.state.academyId) {
+    if (e.state?.academyId) {
       createAcademyPage(data, e.state.academyId);
       showPageByClass("academy");
     }
@@ -162,80 +106,22 @@ fetch("https://borisovski-borche.github.io/cp-09-data/data/db.json")
   .then(res => res.json())
   .then(data => {
     createLandingPage(data.academies);
-
-    urlIdHandler(data.academies, urlId);
+    createAsideMenu(data.academies);
+    createHeaderSubMenu(data.academies);
 
     window.onpopstate = routingHandler(data.academies);
+    urlIdHandler(data.academies, urlId);
   });
 
-aboutBtn.addEventListener(`click`, e => {
+//Back to top
+backToTopBtn = document.querySelector(".footer__icon");
+backToTopBtn.addEventListener("click", e => {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0; // Safari
   e.preventDefault();
-  showPageByClass(e.target.id);
-
-  window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
-});
-
-paymentBtn.addEventListener(`click`, e => {
-  e.preventDefault();
-  showPageByClass(e.target.id);
-
-  window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
-});
-
-contactBtn.addEventListener("click", e => {
-  e.preventDefault();
-  showPageByClass(e.target.id);
-
-  window.history.pushState({ pageId: e.target.id }, "", `/${e.target.id}`);
 });
 
 //Hamburger Menu Logic
-
-let menuOpen = false;
-
-headerBurgerBtn.addEventListener("click", () => {
-  if (!menuOpen) {
-    headerBurgerBtn.classList.add("open");
-    navListBurger.style.opacity = "1";
-    navListBurger.style.transform = "scaleX(1) scaleY(1)";
-    menuOpen = true;
-  } else {
-    headerBurgerBtn.classList.remove("open");
-    navListBurger.style.opacity = "0";
-    navListBurger.style.transform = "scaleX(0) scaleY(0)";
-    menuOpen = false;
-  }
-});
-
-const academiesButton = document.querySelector(".nav__list-academies");
-const academiesSubmenu = document.querySelector(".nav__item-submenu");
-
-let academiesSubmenuOpen = false;
-academiesButton.addEventListener("click", () => {
-  if (!academiesSubmenuOpen) {
-    academiesButton.classList.add("open");
-    academiesButton.style.color = "var(--tertiaryColor)";
-    academiesSubmenu.style.height = "190px";
-    academiesSubmenu.style.margin = "25px 0 0 10px";
-    academiesSubmenuOpen = true;
-  } else {
-    academiesButton.classList.remove("open");
-    academiesButton.style.color = "#fff";
-    academiesSubmenu.style.height = "0";
-    academiesSubmenu.style.margin = "0 0 0 10px";
-    academiesSubmenuOpen = false;
-  }
-});
-
-const navListItemClick = document.getElementById("nav__list-click");
-const navListSubmenu = document.querySelector(".nav__list-subitem");
-let academiesListMenuOpen = true;
-navListItemClick.addEventListener("click", () => {
-  if (!academiesListMenuOpen) {
-    navListSubmenu.style.opacity = "0";
-    academiesListMenuOpen = true;
-  } else {
-    navListSubmenu.style.opacity = "1";
-    academiesListMenuOpen = false;
-  }
-});
+academiesButtonEventHandler();
+burgerBtnEventHandler();
+subMenuBurgerCloseHandler();

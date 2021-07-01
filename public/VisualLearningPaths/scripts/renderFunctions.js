@@ -151,3 +151,30 @@ const renderCategoryCard = data => {
   </div
   `;
 };
+
+//aside menu dynamic render
+
+const renderAsideMenu = academiesData => {
+  const asideHTML = academiesData
+    .map(
+      academy => `
+      <div class="aside__item">
+          <a class="aside__item-link" href="#" id="aside-${academy.id}">${academy.title}</a>
+      </div>`
+    )
+    .join(" ");
+
+  return asideHTML;
+};
+
+`<li class="nav__submenu-item">Web Developer</li>`;
+
+const renderSubMenuLinks = acadmiesData => {
+  const subMenuHTML = acadmiesData
+    .map(
+      academy =>
+        `<li class="nav__submenu-item" id="nav-${academy.id}">${academy.moduleCardData.alternateTitle}</li>`
+    )
+    .join(" ");
+  return subMenuHTML;
+};
