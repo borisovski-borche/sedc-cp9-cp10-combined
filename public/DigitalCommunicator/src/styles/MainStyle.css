@@ -43,6 +43,7 @@
   max-height: 40.25rem;
   background-color: var(--white);
   border: 1px solid var(--dark-blue);
+  z-index: 10;
 }
 
 .header {
@@ -822,7 +823,7 @@ button:hover {
 .modal {
   display: none;
   position: fixed;
-  z-index: 10;
+  z-index: 20;
   padding-top: 5%;
   left: 0;
   top: 0;
