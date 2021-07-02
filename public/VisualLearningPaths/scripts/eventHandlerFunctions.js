@@ -29,6 +29,9 @@ const categoryCardLinksHandler = (linkElements, data) => {
       createAcademyPage(data, academyId);
       window.history.pushState({ academyId }, "", `/${academyId}`);
 
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0; // Safari
+
       showPageByClass("academy");
     });
   });
@@ -41,6 +44,10 @@ const asideLinksHandler = (linkElements, data) => {
       const academyId = e.target.id.slice(6);
       asideItemSelectedHandler(academyId);
       createAcademyPage(data, academyId);
+
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0; // Safari
+
       window.history.pushState({ academyId }, "", `/${academyId}`);
     });
   });
